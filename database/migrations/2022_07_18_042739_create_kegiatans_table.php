@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('kd_kegiatan');
             $table->string('kd_short');
             $table->string('nm_kegiatan');
+            $table->bigInteger('jumlah_kegiatan')->default(0);
             $table->foreignId('program_id');
             $table->timestamps();
         });

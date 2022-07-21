@@ -13,6 +13,9 @@ use App\Models\komponen;
 use App\Models\subkom;
 use App\Models\akun;
 use App\Models\detil;
+use App\Models\sp2d;
+use App\Models\detilsp2d;
+use Carbon\Carbon;
 
 
 class DatabaseSeeder extends Seeder
@@ -4237,5 +4240,5593 @@ class DatabaseSeeder extends Seeder
             'jumlah_detil' => 8600000,
             'akun_id' => 134
         ]);
+
+        // seeder untuk sp2d
+        // 1
+sp2d::create([
+    'jenis_tagihan' => '211 - GAJI INDUK',
+    'no_spp' => '00001T',
+    'no_spm' => '00001A',
+    'no_sp2d' => '220201501000136',
+    'tgl_spp' => Carbon::parse('01/03/2022'),
+    'tgl_spm' => Carbon::parse('01/03/2022'),
+    'tgl_sp2d' => Carbon::parse('01/03/2022'),
+    'nilai_kotor' => 77213130,
+    'nilai_bersih' => 70295200,
+    'keterangan_sp2d' => 'Pembayaran belanja pegawai (Bulan Januari 2022) untuk 19 pegawai/58 jiwa.'
+]);
+// 2
+sp2d::create([
+    'jenis_tagihan' => '211 - GAJI INDUK',
+    'no_spp' => '00002T',
+    'no_spm' => '00002A',
+    'no_sp2d' => '220201505000024',
+    'tgl_spp' => Carbon::parse('01/03/2022'),
+    'tgl_spm' => Carbon::parse('01/03/2022'),
+    'tgl_sp2d' => Carbon::parse('01/03/2022'),
+    'nilai_kotor' => 17041222,
+    'nilai_bersih' => 15517100,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Bulan Januari 2022) untuk 4 Pegawai/12 Jiwa'
+]);
+// 3
+sp2d::create([
+    'jenis_tagihan' => '211 - GAJI INDUK',
+    'no_spp' => '00003T',
+    'no_spm' => '00003A',
+    'no_sp2d' => '220201509000009',
+    'tgl_spp' => Carbon::parse('01/11/2022'),
+    'tgl_spm' => Carbon::parse('01/11/2022'),
+    'tgl_sp2d' => Carbon::parse('02/01/2022'),
+    'nilai_kotor' => 16956272,
+    'nilai_bersih' => 15433000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai berupa Gaji Induk Bulan Februari 2021 untuk 4 Pegawai/12 Jiwa'
+]);
+// 4
+sp2d::create([
+    'jenis_tagihan' => '211 - GAJI INDUK',
+    'no_spp' => '00004T',
+    'no_spm' => '00004A',
+    'no_sp2d' => '220201501000216',
+    'tgl_spp' => Carbon::parse('01/14/2022'),
+    'tgl_spm' => Carbon::parse('01/14/2022'),
+    'tgl_sp2d' => Carbon::parse('02/01/2022'),
+    'nilai_kotor' => 77419079,
+    'nilai_bersih' => 70514000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Gaji Induk Bulan Februari 2022) untuk 19 Pegawai/57 Jiwa'
+]);
+// 5
+sp2d::create([
+    'jenis_tagihan' => '311 - UP',
+    'no_spp' => '00005T',
+    'no_spm' => '00005A',
+    'no_sp2d' => '220201301000178',
+    'tgl_spp' => Carbon::parse('01/18/2022'),
+    'tgl_spm' => Carbon::parse('01/18/2022'),
+    'tgl_sp2d' => Carbon::parse('01/19/2022'),
+    'nilai_kotor' => 60000000,
+    'nilai_bersih' => 60000000,
+    'keterangan_sp2d' => 'UP RM'
+]);
+// 6
+sp2d::create([
+    'jenis_tagihan' => '221 - GAJI LAINNYA',
+    'no_spp' => '00006T',
+    'no_spm' => '00006A',
+    'no_sp2d' => '220201301000473',
+    'tgl_spp' => Carbon::parse('01/25/2022'),
+    'tgl_spm' => Carbon::parse('01/31/2022'),
+    'tgl_sp2d' => Carbon::parse('02/02/2022'),
+    'nilai_kotor' => 8438000,
+    'nilai_bersih' => 8143850,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai Uang Makan Bulan Desember 2021 untuk 13 Pegawai'
+]);
+// 7
+sp2d::create([
+    'jenis_tagihan' => '311 - UP',
+    'no_spp' => '00009T',
+    'no_spm' => '00009A',
+    'no_sp2d' => '220201301000688',
+    'tgl_spp' => Carbon::parse('02/02/2022'),
+    'tgl_spm' => Carbon::parse('02/02/2022'),
+    'tgl_sp2d' => Carbon::parse('02/04/2022'),
+    'nilai_kotor' => 50000000,
+    'nilai_bersih' => 50000000,
+    'keterangan_sp2d' => 'UP PNBP'
+]);
+// 8
+sp2d::create([
+    'jenis_tagihan' => '227 - Penghasilan PPNPN Susulan',
+    'no_spp' => '00010T',
+    'no_spm' => '00010A',
+    'no_sp2d' => '220201301000625',
+    'tgl_spp' => Carbon::parse('02/03/2022'),
+    'tgl_spm' => Carbon::parse('02/03/2022'),
+    'tgl_sp2d' => Carbon::parse('02/04/2022'),
+    'nilai_kotor' => 24900000,
+    'nilai_bersih' => 24552776,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Berupa Honor PPNPN Bulan Januari Tahun 2022 untuk 8 Pegawai sesuai SK No: 21/44/TU.110/I/2022 tanggal 03 Januari 2022, SK No: 22/44/TU.110/I/2022 tanggal 03 Januari 2022 dan SK No: 23/44/TU.110/I/2022 tanggal 03 Ja'
+]);
+// 9
+sp2d::create([
+    'jenis_tagihan' => '227 - Penghasilan PPNPN Susulan',
+    'no_spp' => '00011T',
+    'no_spm' => '00011A',
+    'no_sp2d' => '220201302000317',
+    'tgl_spp' => Carbon::parse('02/03/2022'),
+    'tgl_spm' => Carbon::parse('02/03/2022'),
+    'tgl_sp2d' => Carbon::parse('02/04/2022'),
+    'nilai_kotor' => 5200000,
+    'nilai_bersih' => 5113194,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Berupa Honor PPNPN Bulan Januari Tahun 2022 untuk 2 Pegawai Sesuain SPP No: SK No: 23/44/TU.110/I/2022 tanggal 03 Januari 2022'
+]);
+// 10
+sp2d::create([
+    'jenis_tagihan' => '222 - KEKURANGAN GAJI',
+    'no_spp' => '00012T',
+    'no_spm' => '00012A',
+    'no_sp2d' => '220201301000595',
+    'tgl_spp' => Carbon::parse('02/02/2022'),
+    'tgl_spm' => Carbon::parse('02/03/2022'),
+    'tgl_sp2d' => Carbon::parse('02/04/2022'),
+    'nilai_kotor' => 1230633,
+    'nilai_bersih' => 1119900,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Kekurangan Gaji Bulan Oktober s.d Desember 2021) untuk 3 Pegawai/11 Jiwa'
+]);
+// 11
+sp2d::create([
+    'jenis_tagihan' => '222 - KEKURANGAN GAJI',
+    'no_spp' => '00013T',
+    'no_spm' => '00013A',
+    'no_sp2d' => '220201301000594',
+    'tgl_spp' => Carbon::parse('02/02/2022'),
+    'tgl_spm' => Carbon::parse('02/03/2022'),
+    'tgl_sp2d' => Carbon::parse('02/04/2022'),
+    'nilai_kotor' => 318466,
+    'nilai_bersih' => 289800,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Kekurangan Gaji Bulan Januari 2022) untuk 3 Pegawai/11 Jiwa'
+]);
+// 12
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00014T',
+    'no_spm' => '00014A',
+    'no_sp2d' => '220201301000704',
+    'tgl_spp' => Carbon::parse('02/03/2022'),
+    'tgl_spm' => Carbon::parse('02/04/2022'),
+    'tgl_sp2d' => Carbon::parse('02/04/2022'),
+    'nilai_kotor' => 58645700,
+    'nilai_bersih' => 58645700,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 13
+sp2d::create([
+    'jenis_tagihan' => '221 - GAJI LAINNYA',
+    'no_spp' => '00015T',
+    'no_spm' => '00015A',
+    'no_sp2d' => '220201301000844',
+    'tgl_spp' => Carbon::parse('02/07/2022'),
+    'tgl_spm' => Carbon::parse('02/07/2022'),
+    'tgl_sp2d' => Carbon::parse('02/08/2022'),
+    'nilai_kotor' => 13962000,
+    'nilai_bersih' => 13543900,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Uang Makan Bulan Januari 2022) untuk 23 Pegawai'
+]);
+// 14
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00016T',
+    'no_spm' => '00016A',
+    'no_sp2d' => '220201301000991',
+    'tgl_spp' => Carbon::parse('02/09/2022'),
+    'tgl_spm' => Carbon::parse('02/09/2022'),
+    'tgl_sp2d' => Carbon::parse('02/10/2022'),
+    'nilai_kotor' => 101841350,
+    'nilai_bersih' => 95149265,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Tunjangan Kinerja bulan Januari 2022) untuk 23 Pegawai'
+]);
+// 15
+sp2d::create([
+    'jenis_tagihan' => '211 - GAJI INDUK',
+    'no_spp' => '00017T',
+    'no_spm' => '00017A',
+    'no_sp2d' => '220201501000330',
+    'tgl_spp' => Carbon::parse('02/11/2022'),
+    'tgl_spm' => Carbon::parse('02/11/2022'),
+    'tgl_sp2d' => Carbon::parse('03/01/2022'),
+    'nilai_kotor' => 94533684,
+    'nilai_bersih' => 86084900,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Gaji Induk Bulan Maret 2022) untuk 23 Pegawai/69 Jiwa'
+]);
+// 16
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00020T',
+    'no_spm' => '00020A',
+    'no_sp2d' => '220201301001312',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 7397000,
+    'nilai_bersih' => 7397000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai SPD Nomor : 88 dan SPD Nomor : 82 Tanggal 18 Januari 2022 (Tanggal Dinas 19 Januari s/d 22 Januari 2022) a.n. Iromo, dkk (2 Pegawai)  '
+]);
+// 17
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00021T',
+    'no_spm' => '00021A',
+    'no_sp2d' => '220201301001311',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 3406000,
+    'nilai_bersih' => 3406000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai SPD Nomor : 84 Tanggal 18 Januari 2022 (Tanggal Dinas 19 Januari s/d 22 Januari 2022) a.n. Imaduddin (1 Pegawai)'
+]);
+// 18
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00022T',
+    'no_spm' => '00022A',
+    'no_sp2d' => '220201301001334',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 1500000,
+    'nilai_bersih' => 1500000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST Nomor : 15 Tanggal 06 Januari 2022 (Tanggal Dinas 06 Januari 2022), ST Nomor : 28 Tanggal 07 Januari 2022 (Tanggal Dinas 07 Januari 2022) a.n. Muklasin, dkk (6 Pegawai)'
+]);
+// 19
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00023T',
+    'no_spm' => '00023A',
+    'no_sp2d' => '220201301001291',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 1000000,
+    'nilai_bersih' => 1000000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST Nomor : 47 Tanggal 12 Januari 2022 (Tanggal Dinas 12 Januari 2022) a.n. Iromo, dkk (4 Pegawai)'
+]);
+// 20
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00024T',
+    'no_spm' => '00024A',
+    'no_sp2d' => '220201301001305',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 500000,
+    'nilai_bersih' => 500000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST Nomor : 116 Tanggal 25 Januari 2022 (Tanggal Dinas 25 Januari 2022) a.n. Iromo, dkk (2 Pegawai)'
+]);
+// 21
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00025T',
+    'no_spm' => '00025A',
+    'no_sp2d' => '220201301001313',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 500000,
+    'nilai_bersih' => 500000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST Nomor : 10 Tanggal 04 Januari 2022 (Tanggal Dinas 05 Januari 2022) a.n. Imaduddin, dkk (2 Pegawai)'
+]);
+// 22
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00026T',
+    'no_spm' => '00026A',
+    'no_sp2d' => '220201301001306',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 2100000,
+    'nilai_bersih' => 2100000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST Nomor : 126 Tanggal 26 Januari 2022 (Tanggal Dinas 26 Januari 2022), ST Nomor : 151 Tanggal 03 Februari 2022 (Tanggal Dinas 03 Februari 2022) a.n. Iromo, dkk (6 Pegawai)'
+]);
+// 23
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00027T',
+    'no_spm' => '00027A',
+    'no_sp2d' => '220201301001308',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 1250000,
+    'nilai_bersih' => 1250000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST Nomor : 54 Tanggal 13 Januari 2022 (Tanggal Dinas 13 Januari 2022), ST Nomor : 104 Tanggal 21 Januari 2022 (Tanggal Dinas 21 Januari 2022) a.n. Iromo, dkk (5 Pegawai)'
+]);
+// 24
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00028T',
+    'no_spm' => '00028A',
+    'no_sp2d' => '220201301001307',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 1500000,
+    'nilai_bersih' => 1500000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.23 Tgl 06 Januari 2022 (Tgl Dinas 06 Januari 2022),ST No.95 Tgl 20 Januari 2022 (Tgl Dinas 20 Januari 2022),ST No.133 Tgl 26 Januari 2022 (Tgl Dinas 26 Januari 2022), a.n. Iromo, dkk (6 Pegawai)'
+]);
+// 25
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00029T',
+    'no_spm' => '00029A',
+    'no_sp2d' => '220201301001293',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 1250000,
+    'nilai_bersih' => 1250000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.130 Tgl 26 Januari 2022 (Tgl Dinas 26 Januari 2022),ST No.142 Tgl 31 Januari 2022 (Tgl Dinas 31 Januari 2022),ST No.149 Tgl 03 Februari 2022 (Tgl Dinas 03 Februari 2022) a.n. Atik, dkk (5 Pegawai)'
+]);
+// 26
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00030T',
+    'no_spm' => '00030A',
+    'no_sp2d' => '220201301001292',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 1500000,
+    'nilai_bersih' => 1500000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.76 Tgl 17 Januari 2022 (Tgl Dinas 17 Januari 2022),ST No.101 Tgl 21 Januari 2022 (Tgl Dinas 21 Januari 2022),ST No.119 Tgl 25 Januari 2022 (Tgl Dinas 25 Januari 2022) a.n. Atik, dkk (6 Pegawai)'
+]);
+// 27
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00031T',
+    'no_spm' => '00031A',
+    'no_sp2d' => '220201301001314',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 1750000,
+    'nilai_bersih' => 1750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.40 Tgl 11 Januari 2022 (Tgl Dinas 11 Januari 2022),ST No. 65 dan ST No. 69 Tgl 14 Januari 2022 (Tgl Dinas 14 Januari 2022) a.n. Atik, dkk (7 Pegawai)'
+]);
+// 28
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00032T',
+    'no_spm' => '00032A',
+    'no_sp2d' => '220201301001338',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 1000000,
+    'nilai_bersih' => 1000000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.01, ST No.03 dan ST No.05 Tgl 3 Januari 2022 (Tgl Dinas 3 Januari 2022), ST No.08 Tgl 4 Januari 2022 (Tgl Dinas 4 Januari 2022) a.n. Arisdianur, dkk (5 Pegawai)'
+]);
+// 29
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00033T',
+    'no_spm' => '00033A',
+    'no_sp2d' => '220201301001337',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 1000000,
+    'nilai_bersih' => 1000000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.13 Tgl 5 Januari 2022 (Tgl Dinas 5 Januari 2022),ST No.19 dan ST No.21 Tgl 6 Januari 2022 (Tgl Dinas 6 Januari 2022),ST No.33 Tgl 8 Januari 2022 (Tgl Dinas 8 Januari 2022) a/n Tofik, dkk (4 Pegawai)'
+]);
+// 30
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00034T',
+    'no_spm' => '00034A',
+    'no_sp2d' => '220201301001336',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 1000000,
+    'nilai_bersih' => 1000000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.35 dan ST No.37 Tgl 10 Januari 2022 (Tgl Dinas 10 Januari 2022),ST No.43 dan ST No.45 Tgl 11 Januari 2022 (Tgl Dinas 11 Januari 2022) a/n Fikr, dkk (4 Pegawai)'
+]);
+// 31
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00035T',
+    'no_spm' => '00035A',
+    'no_sp2d' => '220201301001335',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 1000000,
+    'nilai_bersih' => 1000000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.52 Tgl 12 Januari 2022 (Tgl Dinas 12 Januari 2022), ST No.59, ST No.61 dan ST No.63 Tgl 13 Januari 2022 (Tgl Dinas 13 Januari 2022) a/n Arif, dkk (4 Pegawai)'
+]);
+// 32
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00036T',
+    'no_spm' => '00036A',
+    'no_sp2d' => '220201301001319',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.72 Tgl 14 Januari 2022 (Tgl Dinas 14 Januari 2022),ST No.79 Tgl 17 Januari 2022 (Tgl Dinas 17 Januari 2022),ST No.93 Tgl 19 Januari 2022 (Tgl Dinas 19 Januari 2022) a/n Arisdianur, dkk (3 Pegawai)'
+]);
+// 33
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00037T',
+    'no_spm' => '00037A',
+    'no_sp2d' => '220201301001318',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 1000000,
+    'nilai_bersih' => 1000000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.89 dan ST No. 91 Tgl 18 Januari 2022 (Tgl Dinas 18 Januari 2022), ST No.97 dan ST No.99 Tgl 20 Januari 2022 (Tgl Dinas 20 Januari 2022) a/n Rai, dkk (4 Pegawai)'
+]);
+// 34
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00038T',
+    'no_spm' => '00038A',
+    'no_sp2d' => '220201301001317',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.106 Tgl 21 Januari 2022 (Tgl Dinas 21 Januari 2022), ST No.112 dan ST No.114 Tgl 24 Januari 2022 (Tgl Dinas 24 Januari 2022) a/n Fikr, dkk (3 Pegawai)'
+]);
+// 35
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00039T',
+    'no_spm' => '00039A',
+    'no_sp2d' => '220201301001316',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.122 dan ST No.124 Tgl 25 Januari 2022 (Tgl Dinas 25 Januari 2022), ST No. 136 Tgl 27 Januari 2022 (Tgl Dinas 27 Januari 2022) a/n Danang, dkk (3 Pegawai)'
+]);
+// 36
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00040T',
+    'no_spm' => '00040A',
+    'no_sp2d' => '220201301001315',
+    'tgl_spp' => Carbon::parse('02/14/2022'),
+    'tgl_spm' => Carbon::parse('02/15/2022'),
+    'tgl_sp2d' => Carbon::parse('02/16/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.138 Tgl 28 Januari 2022 (Tgl Dinas 28 Januari 2022),ST No.145 Tgl 31 Januari 2022 (Tgl Dinas 31 Januari 2022),ST No.156 Tgl 4 Februari 2022 (Tgl Dinas 4 Februari 2022) a/n Muklasin, dkk (3 Pegawai)'
+]);
+// 37
+sp2d::create([
+    'jenis_tagihan' => '217 - Penghasilan PPNPN Induk',
+    'no_spp' => '00042T',
+    'no_spm' => '00042A',
+    'no_sp2d' => '220201501000527',
+    'tgl_spp' => Carbon::parse('02/23/2022'),
+    'tgl_spm' => Carbon::parse('02/23/2022'),
+    'tgl_sp2d' => Carbon::parse('03/01/2022'),
+    'nilai_kotor' => 30100000,
+    'nilai_bersih' => 29665970,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Berupa Honor PPNPN Bulan Februari Tahun 2022 untuk 10 Pegawai sesuai SK No:21/44/TU.110/I/2022 Tanggal 03 Januari 2022,SK No:22/44/TU.110/I/2022 Tanggal 03 Januari 2022,dan SK No:23/44/TU.110/I/2022 Tanggal 03 Januari 2022.'
+]);
+// 38
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00043T',
+    'no_spm' => '00043A',
+    'no_sp2d' => '220201302000943',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('02/25/2022'),
+    'tgl_sp2d' => Carbon::parse('03/01/2022'),
+    'nilai_kotor' => 16000000,
+    'nilai_bersih' => 14400000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang sesuai Kuitansi No. 001/Kwitansi/II/2022 tanggal 02 Februari 2022, BAST No. 02.02/SKIPM/44.0/PL.410/II/2022 tanggal 02 Februari 2022, BA Pembayaran No. 02.03/SKIPM/44.0/PL.410/II/2022 tanggal 02 Februari 2022'
+]);
+// 39
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00044T',
+    'no_spm' => '00044A',
+    'no_sp2d' => '220201301001766',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('02/25/2022'),
+    'tgl_sp2d' => Carbon::parse('03/01/2022'),
+    'nilai_kotor' => 11220000,
+    'nilai_bersih' => 10824500,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang (Honor Operasional Satker) bulan Januari 2022  a.n Danang Hadi Prakoso, dkk (15 Pegawai) sesuai SK KPA No. 12, 14 s.d 17 dan 019 tanggal 03 Januari 2022 '
+]);
+// 40
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00045T',
+    'no_spm' => '00045A',
+    'no_sp2d' => '220201301001773',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('02/25/2022'),
+    'tgl_sp2d' => Carbon::parse('03/01/2022'),
+    'nilai_kotor' => 640000,
+    'nilai_bersih' => 640000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang (Honor Pengelola Keuangan) bulan Januari 2022 a.n Aan Mahturan (1 pegawai) sesuai SK No. 14/44.0/KU.200/I/2022 tanggal 03 Januari 2022'
+]);
+// 41
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00046T',
+    'no_spm' => '00046A',
+    'no_sp2d' => '220201301001984',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 840000,
+    'nilai_bersih' => 840000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.40 Tgl 11 Januari 2022 (Tgl Dinas 11 Januari 2022),ST No.65 dan ST No.69 Tgl 14 Januari 2022 (Tgl Dinas 14 Januari 2022), a/n Atik L, dkk (7 Pegawai)'
+]);
+// 42
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00047T',
+    'no_spm' => '00047A',
+    'no_sp2d' => '220201301001983',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 720000,
+    'nilai_bersih' => 720000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.76 Tgl 17 Januari 2022 (Tgl Dinas 17 Januari 2022),ST No.101 Tgl 21 Januari 2022 (Tgl Dinas 21 Januari 2022),ST No. 119 Tgl 25 Januari 2022 (Tgl Dinas 25 Januari 2022), a/n Lansan, dkk (6 Pegawai)'
+]);
+// 43
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00048T',
+    'no_spm' => '00048A',
+    'no_sp2d' => '220201301001997',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 600000,
+    'nilai_bersih' => 600000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.130 Tgl 26 Januari 2022 (Tgl Dinas 26 Januari 2022),ST No.142 Tgl 31 Januari 2022 (Tgl Dinas 31 Januari 2022),ST No.149 Tgl 3 Februari 2022 (Tgl Dinas 3 Februari 2022), a/n Atik L, dkk (5 Pegawai)'
+]);
+// 44
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00049T',
+    'no_spm' => '00049A',
+    'no_sp2d' => '220201301001996',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 1110000,
+    'nilai_bersih' => 1110000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.158 Tgl 8 Februari 2022 (Tgl Dinas 8 Februari 2022),ST No.163 Tgl 9 Februari 2022 (Tgl Dinas 9 Februari 2022),ST No.175 Tgl 14 Februari 2022 (Tgl Dinas 14 Februari 2022), a/n Yasin, dkk (3 Pegawai)'
+]);
+// 45
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00050T',
+    'no_spm' => '00050A',
+    'no_sp2d' => '220201301001995',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 740000,
+    'nilai_bersih' => 740000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.179 Tgl 16 Februari 2022 (Tgl Dinas 16 Februari 2022),ST No.184 Tgl 18 Februari 2022 (Tgl Dinas 18 Februari 2022), a/n Mustika, dkk (2 Pegawai)'
+]);
+// 46
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00051T',
+    'no_spm' => '00051A',
+    'no_sp2d' => '220201301001994',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 1110000,
+    'nilai_bersih' => 1110000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.179 Tgl 16 Februari 2022 (Tgl Dinas 16 Februari 2022),ST No.184 Tgl 18 Februari 2022 (Tgl Dinas 18 Februari 2022), a/n Mustika, dkk (2 Pegawai)'
+]);
+// 47
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00052T',
+    'no_spm' => '00052A',
+    'no_sp2d' => '220201301001993',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 720000,
+    'nilai_bersih' => 720000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.23 Tgl 6 Januari 2022 (Tgl Dinas 6 Januari 2022),ST No.95 Tgl 20 Januari 2022 (Tgl Dinas 20 Januari 2022),ST No.133 Tgl 26 Januari 2022 (Tgl Dinas 26 Januari 2022), a/n Iromo, dkk (6 Pegawai)'
+]);
+// 48
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00053T',
+    'no_spm' => '00053A',
+    'no_sp2d' => '220201301001969',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 600000,
+    'nilai_bersih' => 600000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.54 Tgl 13 Januari 2022 (Tgl Dinas 13 Januari 2022),ST No.104 Tgl 21 Januari 2022 (Tgl Dinas 21 Januari 2022), a/n Iromo, dkk (5 Pegawai)'
+]);
+// 49
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00054T',
+    'no_spm' => '00054A',
+    'no_sp2d' => '220201301001968',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 1100000,
+    'nilai_bersih' => 1100000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.171 Tgl 13 Februari 2022 (Tgl Dinas 13 Februari 2022), a/n Iromo, dkk (3 Pegawai)'
+]);
+// 50
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00055T',
+    'no_spm' => '00055A',
+    'no_sp2d' => '220201301001967',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 700000,
+    'nilai_bersih' => 700000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.186 dan ST No.188 Tgl 21 Januari 2022 (Tgl Dinas 21 Januari 2022), a/n Arif Nur R, dkk (2 Pegawai)'
+]);
+// 51
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00056T',
+    'no_spm' => '00056A',
+    'no_sp2d' => '220201301001986',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.165 Tgl 9 Februari 2022 (Tgl Dinas 9 Februari 2022),ST No.167 dan ST No.169 Tgl 12 Februari 2022 (Tgl Dinas 12 Februari 2022), a/n M. Taufiq, dkk (3 Pegawai)'
+]);
+// 52
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00057T',
+    'no_spm' => '00057A',
+    'no_sp2d' => '220201301001985',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 500000,
+    'nilai_bersih' => 500000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.183 Tgl 18 Februari 2022 (Tgl Dinas 18 Februari 2022),ST No.190 Tgl 21 Februari 2022 (Tgl Dinas 21 Februari 2022), a/n M.Taufik, dkk (2 Pegawai)'
+]);
+// 53
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00058T',
+    'no_spm' => '00058A',
+    'no_sp2d' => '220201301001971',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 500000,
+    'nilai_bersih' => 500000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.160 Tgl 8 Februari 2022 (Tgl Dinas 8 Februari 2022), a/n Iromo, dkk (2 Pegawai)'
+]);
+// 54
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00059T',
+    'no_spm' => '00059A',
+    'no_sp2d' => '220201301001970',
+    'tgl_spp' => Carbon::parse('02/25/2022'),
+    'tgl_spm' => Carbon::parse('03/01/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 3553500,
+    'nilai_bersih' => 3553500,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 85 Tgl 18 Januari 2022 (Tgl Dinas 19 Januari s/d 22 Januari 2022), a/n Yasin A (1 Pegawai)'
+]);
+// 55
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00060T',
+    'no_spm' => '00060A',
+    'no_sp2d' => '220201301002094',
+    'tgl_spp' => Carbon::parse('03/02/2022'),
+    'tgl_spm' => Carbon::parse('03/02/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 44810800,
+    'nilai_bersih' => 44810800,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 56
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00061T',
+    'no_spm' => '00061A',
+    'no_sp2d' => '220201301002093',
+    'tgl_spp' => Carbon::parse('03/02/2022'),
+    'tgl_spm' => Carbon::parse('03/02/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 6750000,
+    'nilai_bersih' => 6750000,
+    'keterangan_sp2d' => 'Penggantian Uang Pesediaan untuk keperluan Belanja Barang'
+]);
+// 57
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00062T',
+    'no_spm' => '00062A',
+    'no_sp2d' => '220201301002099',
+    'tgl_spp' => Carbon::parse('03/02/2022'),
+    'tgl_spm' => Carbon::parse('03/02/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 8434500,
+    'nilai_bersih' => 8434500,
+    'keterangan_sp2d' => 'Penggantian Uang Pesediaan untuk keperluan Belanja Barang'
+]);
+// 58
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00063T',
+    'no_spm' => '00063A',
+    'no_sp2d' => '220201301002098',
+    'tgl_spp' => Carbon::parse('03/02/2022'),
+    'tgl_spm' => Carbon::parse('03/02/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 17776000,
+    'nilai_bersih' => 17776000,
+    'keterangan_sp2d' => 'Penggantian Uang Pesediaan untuk keperluan Belanja Barang'
+]);
+// 59
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00064T',
+    'no_spm' => '00064A',
+    'no_sp2d' => '220201301002097',
+    'tgl_spp' => Carbon::parse('03/02/2022'),
+    'tgl_spm' => Carbon::parse('03/02/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 2420000,
+    'nilai_bersih' => 2420000,
+    'keterangan_sp2d' => 'Penggantian Uang Pesediaan untuk keperluan Belanja Barang'
+]);
+// 60
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00065T',
+    'no_spm' => '00065A',
+    'no_sp2d' => '220201301002096',
+    'tgl_spp' => Carbon::parse('03/02/2022'),
+    'tgl_spm' => Carbon::parse('03/02/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 460000,
+    'nilai_bersih' => 460000,
+    'keterangan_sp2d' => 'Penggantian Uang Pesediaan untuk keperluan Belanja Barang'
+]);
+// 61
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00066T',
+    'no_spm' => '00066A',
+    'no_sp2d' => '220201301002095',
+    'tgl_spp' => Carbon::parse('03/02/2022'),
+    'tgl_spm' => Carbon::parse('03/02/2022'),
+    'tgl_sp2d' => Carbon::parse('03/07/2022'),
+    'nilai_kotor' => 183000,
+    'nilai_bersih' => 183000,
+    'keterangan_sp2d' => 'Penggantian Uang Pesediaan untuk keperluan Belanja Barang'
+]);
+// 62
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00067T',
+    'no_spm' => '00067A',
+    'no_sp2d' => '220201301002384',
+    'tgl_spp' => Carbon::parse('03/08/2022'),
+    'tgl_spm' => Carbon::parse('03/08/2022'),
+    'tgl_sp2d' => Carbon::parse('03/09/2022'),
+    'nilai_kotor' => 11220000,
+    'nilai_bersih' => 10824500,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang (Honor Operasional Satker) bulan Februari 2022 a.n Danang Hadi Prakoso, dkk (15 pegawai) sesuai SK KPA No. 012, 013 s.d 017 dan 019 tanggal 03 Januari 2022'
+]);
+// 63
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00068T',
+    'no_spm' => '00068A',
+    'no_sp2d' => '220201301002391',
+    'tgl_spp' => Carbon::parse('03/08/2022'),
+    'tgl_spm' => Carbon::parse('03/08/2022'),
+    'tgl_sp2d' => Carbon::parse('03/09/2022'),
+    'nilai_kotor' => 640000,
+    'nilai_bersih' => 640000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang (Honor Pengelola Keuangan) bulan Februari 2022 a.n Aan mahturan (1 pegawai) sesuai SK No. 14/44.0/KU.200/I/2022 tanggal 03 Januari 2022'
+]);
+// 64
+sp2d::create([
+    'jenis_tagihan' => '221 - GAJI LAINNYA',
+    'no_spp' => '00069T',
+    'no_spm' => '00069A',
+    'no_sp2d' => '220201301002482',
+    'tgl_spp' => Carbon::parse('03/09/2022'),
+    'tgl_spm' => Carbon::parse('03/09/2022'),
+    'tgl_sp2d' => Carbon::parse('03/10/2022'),
+    'nilai_kotor' => 12949000,
+    'nilai_bersih' => 12529050,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Uang Makan Bulan Februari 2022) untuk 23 Pegawai'
+]);
+// 65
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00070T',
+    'no_spm' => '00070A',
+    'no_sp2d' => '220201301002646',
+    'tgl_spp' => Carbon::parse('03/10/2022'),
+    'tgl_spm' => Carbon::parse('03/10/2022'),
+    'tgl_sp2d' => Carbon::parse('03/11/2022'),
+    'nilai_kotor' => 100035299,
+    'nilai_bersih' => 94463938,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Tunjangan Kinerja Bulan Februari 2022) untuk 23 Pegawai'
+]);
+// 66
+sp2d::create([
+    'jenis_tagihan' => '317 - GUP-KKP',
+    'no_spp' => '00071T',
+    'no_spm' => '00071A',
+    'no_sp2d' => '220201301002750',
+    'tgl_spp' => Carbon::parse('03/11/2022'),
+    'tgl_spm' => Carbon::parse('03/11/2022'),
+    'tgl_sp2d' => Carbon::parse('03/14/2022'),
+    'nilai_kotor' => 1512312,
+    'nilai_bersih' => 1512312,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 67
+sp2d::create([
+    'jenis_tagihan' => '211 - GAJI INDUK',
+    'no_spp' => '00072T',
+    'no_spm' => '00072A',
+    'no_sp2d' => '220201501000594',
+    'tgl_spp' => Carbon::parse('03/15/2022'),
+    'tgl_spm' => Carbon::parse('03/15/2022'),
+    'tgl_sp2d' => Carbon::parse('04/01/2022'),
+    'nilai_kotor' => 94643143,
+    'nilai_bersih' => 86184500,
+    'keterangan_sp2d' => '	Pembayaran Belanja Pegawai (Gaji Induk Bulan April 2022) untuk 23 Pegawai/69 pegawai'
+]);
+// 68
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00075T',
+    'no_spm' => '00075A',
+    'no_sp2d' => '220201301003649',
+    'tgl_spp' => Carbon::parse('03/28/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 1110000,
+    'nilai_bersih' => 1110000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.221 Tgl 8 Maret 2022 (Tgl Dinas 8 Maret 2022),ST No.235 Tgl 9 Maret 2022 (Tgl Dinas 9 Maret 2022),ST No.293 Tgl 17 Maret 2022 (Tgl Dinas 17 Maret 2022), a/n Arisdianur, dkk (3 Pegawai)'
+]);
+// 69
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00076T',
+    'no_spm' => '00076A',
+    'no_sp2d' => '220201301003648',
+    'tgl_spp' => Carbon::parse('03/28/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 740000,
+    'nilai_bersih' => 740000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.208 Tgl 4 Maret 2022 (Tgl Dinas 4 Maret 2022),ST No.263 Tgl 14 Maret 2022 (Tgl Dinas 14 Maret 2022), a/n Yasin A, dkk (2 Pegawai)'
+]);
+// 70
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00077T',
+    'no_spm' => '00077A',
+    'no_sp2d' => '220201301003647',
+    'tgl_spp' => Carbon::parse('03/28/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 740000,
+    'nilai_bersih' => 740000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.282 Tgl 16 Maret 2022 (Tgl Dinas 16 Maret 2022),ST No.289 Tgl 17 Maret 2022 (Tgl Dinas 17 Maret 2022), a/n Mustika Wati, dkk (2 Pegawai)'
+]);
+// 71
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00078T',
+    'no_spm' => '00078A',
+    'no_sp2d' => '220201301003646',
+    'tgl_spp' => Carbon::parse('03/28/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 740000,
+    'nilai_bersih' => 740000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.282 Tgl 16 Maret 2022 (Tgl Dinas 16 Maret 2022),ST No.289 Tgl 17 Maret 2022 (Tgl Dinas 17 Maret 2022), a/n Mustika Wati, dkk (2 Pegawai)'
+]);
+// 72
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00079T',
+    'no_spm' => '00079A',
+    'no_sp2d' => '220201301003645',
+    'tgl_spp' => Carbon::parse('03/28/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.200 Tgl 1 Maret 2022 (Tgl Dinas 1 Maret 2022),ST No.219 Tgl 8 Maret 2022 (Tgl Dinas 8 Maret 2022),ST No.233 Tgl 9 Maret 2022 (Tgl Dinas 9 Maret 2022), a/n Arif Nur R, dkk (3 Pegawai)'
+]);
+// 73
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00080T',
+    'no_spm' => '00080A',
+    'no_sp2d' => '220201301003644',
+    'tgl_spp' => Carbon::parse('03/28/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.247 Tgl 9 Maret 2022 (Tgl Dinas 9 Maret 2022),ST No.249 Tgl 10 Maret 2022 (Tgl Dinas 10 Maret 2022),ST No.254 Tgl 11 Maret 2022 (Tgl Dinas 11 Maret 2022), a/n Mustika Wati, dkk (3 Pegawai)'
+]);
+// 74
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00081T',
+    'no_spm' => '00081A',
+    'no_sp2d' => '220201301003643',
+    'tgl_spp' => Carbon::parse('03/28/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.256 Tgl 12 Maret 2022 (Tgl Dinas 12 Maret 2022),ST No.265 Tgl 14 Maret 2022 (Tgl Dinas 14 Maret 2022),ST No.284 Tgl 16 Maret 2022 (Tgl Dinas 16 Maret 2022), a/n Mustika Wati, dkk (3 Pegawai)'
+]);
+// 75
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00082T',
+    'no_spm' => '00082A',
+    'no_sp2d' => '220201301003642',
+    'tgl_spp' => Carbon::parse('03/28/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.293 Tgl 17 Maret 2022 (Tgl Dinas 17 Maret 2022),ST No.302 dan ST No. 304 Tgl 18 Maret 2022 (Tgl Dinas 18 Maret 2022), a/n Arif Nur R, dkk (3 Pegawai)'
+]);
+// 76
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00083T',
+    'no_spm' => '00083A',
+    'no_sp2d' => '220201301003638',
+    'tgl_spp' => Carbon::parse('03/28/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 700000,
+    'nilai_bersih' => 700000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.286 Tgl 17 Maret 2022 (Tgl Dinas 17 Maret 2022), a/n Arisdianur, dkk (2 Pegawai)'
+]);
+// 77
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00085T',
+    'no_spm' => '00085A',
+    'no_sp2d' => '220201301003637',
+    'tgl_spp' => Carbon::parse('03/29/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 2720000,
+    'nilai_bersih' => 2720000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.203 Tgl 3 Maret 2022 (Tgl Dinas 4 Maret 2022),ST No.210 Tgl 6 Maret 2022 (Tgl Dinas 7 Maret 2022), a/n Arisdianur, dkk (8 Pegawai)'
+]);
+// 78
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00086T',
+    'no_spm' => '00086A',
+    'no_sp2d' => '220201301003636',
+    'tgl_spp' => Carbon::parse('03/29/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 6653000,
+    'nilai_bersih' => 6653000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.215 Tgl 7 Maret 2022 (Tgl Dinas 8 Maret 2022),ST No.223 Tgl 8 Maret 2022 (Tgl Dinas 9 Maret s/d 11 Maret 2022), a/n Mustika Wati, dkk (8 Pegawai)'
+]);
+// 79
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00087T',
+    'no_spm' => '00087A',
+    'no_sp2d' => '220201301003635',
+    'tgl_spp' => Carbon::parse('03/29/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 1195000,
+    'nilai_bersih' => 1195000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.258 Tgl 14 Maret 2022 (Tgl Dinas 14 Maret 2022), a/n Widayanti, dkk (3 Pegawai)'
+]);
+// 80
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00088T',
+    'no_spm' => '00088A',
+    'no_sp2d' => '220201301003631',
+    'tgl_spp' => Carbon::parse('03/29/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 740000,
+    'nilai_bersih' => 740000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesua ST No.299 Tgl 18 Maret 2022 (Tgl Dinas 18 Maret 2022), a/n Yasin A, dkk (2 Pegawai)'
+]);
+// 81
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00089T',
+    'no_spm' => '00089A',
+    'no_sp2d' => '220201301003630',
+    'tgl_spp' => Carbon::parse('03/29/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 2220000,
+    'nilai_bersih' => 2220000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.196 Tgl 24 Maret 2022 (Tgl Dinas 24 Maret s/d 25 Maret 2022), a/n Imaduddin, dkk (3 Pegawai) '
+]);
+// 82
+sp2d::create([
+    'jenis_tagihan' => '227 - Penghasilan PPNPN Susulan',
+    'no_spp' => '00090T',
+    'no_spm' => '00090A',
+    'no_sp2d' => '220201301003617',
+    'tgl_spp' => Carbon::parse('03/29/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/30/2022'),
+    'nilai_kotor' => 29500000,
+    'nilai_bersih' => 29109373,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Berupa Honor PPNPN Bulan Maret Tahun 2022 untuk 9 Pegawai sesuai SK No: 50/44.0/TU.110/III/2022; SK No: 52/44.0/TU.110/III/2022; SK No: 53/44.0/TU.110/III/2022 Tanggal 01 Maret 2022.'
+]);
+// 83
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00091T',
+    'no_spm' => '00091A',
+    'no_sp2d' => '220201301003682',
+    'tgl_spp' => Carbon::parse('03/29/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/31/2022'),
+    'nilai_kotor' => 7911600,
+    'nilai_bersih' => 7911600,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 251 Tgl 11 Maret 2022 (Tanggal Dinas 14 Maret s/d 18 Maret 2022), a/n Atik L (1 Pegawai)'
+]);
+// 84
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00092T',
+    'no_spm' => '00092A',
+    'no_sp2d' => '220201301003681',
+    'tgl_spp' => Carbon::parse('03/29/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/31/2022'),
+    'nilai_kotor' => 4162000,
+    'nilai_bersih' => 4162000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 229 Tgl 9 Maret 2022 (Tgl Dinas 9 Maret s/d 10 Maret 2022), ST No. 267 Tgl 18 Maret (Tgl Dinas 19 Maret s/d 20 Maret 2022), a/n Iromo, dkk (3 Pegawai)'
+]);
+// 85
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00093T',
+    'no_spm' => '00093A',
+    'no_sp2d' => '220201301003680',
+    'tgl_spp' => Carbon::parse('03/29/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/31/2022'),
+    'nilai_kotor' => 4450000,
+    'nilai_bersih' => 4450000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 251 Tgl 11 Maret 2022 (Tgl Dinas 14 Maret s/d 18 Maret 2022), a/n Iromo (1 Pegawai)'
+]);
+// 86
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00094T',
+    'no_spm' => '00094A',
+    'no_sp2d' => '220201301003679',
+    'tgl_spp' => Carbon::parse('03/29/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/31/2022'),
+    'nilai_kotor' => 2960000,
+    'nilai_bersih' => 2960000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 240 Tgl 9 Maret 2022 (Tgl Dinas 10 Maret s/d 11 Maret 2022), a/n Mustika Wati, dkk (4 Pegawai)'
+]);
+// 87
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00095T',
+    'no_spm' => '00095A',
+    'no_sp2d' => '220201301003684',
+    'tgl_spp' => Carbon::parse('03/29/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/31/2022'),
+    'nilai_kotor' => 1680000,
+    'nilai_bersih' => 1680000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 240 Tgl 9 Maret 2021 (Tgl Dinas 10 Maret s/d 11 Maret 2021), a/n Isnaini M, dkk (2 Pegawai)'
+]);
+// 88
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00096T',
+    'no_spm' => '00096A',
+    'no_sp2d' => '220201301003683',
+    'tgl_spp' => Carbon::parse('03/29/2022'),
+    'tgl_spm' => Carbon::parse('03/29/2022'),
+    'tgl_sp2d' => Carbon::parse('03/31/2022'),
+    'nilai_kotor' => 1210000,
+    'nilai_bersih' => 1210000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 295 Tgl 18 Maret 2022 (Tgl Dinas 18 Maret 2022), a/n Sartini S, dkk (3 Pegawai) '
+]);
+// 89
+sp2d::create([
+    'jenis_tagihan' => '317 - GUP-KKP',
+    'no_spp' => '00097T',
+    'no_spm' => '00097A',
+    'no_sp2d' => '220201301003651',
+    'tgl_spp' => Carbon::parse('03/30/2022'),
+    'tgl_spm' => Carbon::parse('03/30/2022'),
+    'tgl_sp2d' => Carbon::parse('03/31/2022'),
+    'nilai_kotor' => 252362,
+    'nilai_bersih' => 252362,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 90
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00098T',
+    'no_spm' => '00098A',
+    'no_sp2d' => '220201301003839',
+    'tgl_spp' => Carbon::parse('04/01/2022'),
+    'tgl_spm' => Carbon::parse('04/01/2022'),
+    'tgl_sp2d' => Carbon::parse('04/04/2022'),
+    'nilai_kotor' => 40203200,
+    'nilai_bersih' => 40203200,
+    'keterangan_sp2d' => 'Penggantian Uang persediaan Untuk Keperluan Belanja Barang'
+]);
+// 91
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00099T',
+    'no_spm' => '00099A',
+    'no_sp2d' => '220201301003838',
+    'tgl_spp' => Carbon::parse('04/01/2022'),
+    'tgl_spm' => Carbon::parse('04/01/2022'),
+    'tgl_sp2d' => Carbon::parse('04/04/2022'),
+    'nilai_kotor' => 19650000,
+    'nilai_bersih' => 19650000,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 92
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00100T',
+    'no_spm' => '00100A',
+    'no_sp2d' => '220201302002131',
+    'tgl_spp' => Carbon::parse('04/04/2022'),
+    'tgl_spm' => Carbon::parse('04/04/2022'),
+    'tgl_sp2d' => Carbon::parse('04/06/2022'),
+    'nilai_kotor' => 11495000,
+    'nilai_bersih' => 10241000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang sesuai dengan Kuitansi nomor 140490/-MT/III/2022 tanggal 2 Maret 2022; BAST nomor 108/SKIPM/44.0/PL.410/III/2022 tanggal 2 Maret 2022; BA. Pembayaran 109/SKIPM/44.0/PL.410/III/2022 tanggal 2 Maret 2022'
+]);
+// 93
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00101T',
+    'no_spm' => '00101A',
+    'no_sp2d' => '220201301004171',
+    'tgl_spp' => Carbon::parse('04/06/2022'),
+    'tgl_spm' => Carbon::parse('04/06/2022'),
+    'tgl_sp2d' => Carbon::parse('04/07/2022'),
+    'nilai_kotor' => 4836500,
+    'nilai_bersih' => 4836500,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 94
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00102T',
+    'no_spm' => '00102A',
+    'no_sp2d' => '220201301004170',
+    'tgl_spp' => Carbon::parse('04/06/2022'),
+    'tgl_spm' => Carbon::parse('04/06/2022'),
+    'tgl_sp2d' => Carbon::parse('04/07/2022'),
+    'nilai_kotor' => 2335000,
+    'nilai_bersih' => 2335000,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 95
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00103T',
+    'no_spm' => '00103A',
+    'no_sp2d' => '220201301004137',
+    'tgl_spp' => Carbon::parse('04/06/2022'),
+    'tgl_spm' => Carbon::parse('04/06/2022'),
+    'tgl_sp2d' => Carbon::parse('04/07/2022'),
+    'nilai_kotor' => 21354000,
+    'nilai_bersih' => 21354000,
+    'keterangan_sp2d' => 'Penggantian uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 96
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00104T',
+    'no_spm' => '00104A',
+    'no_sp2d' => '220201301004174',
+    'tgl_spp' => Carbon::parse('04/06/2022'),
+    'tgl_spm' => Carbon::parse('04/06/2022'),
+    'tgl_sp2d' => Carbon::parse('04/07/2022'),
+    'nilai_kotor' => 6896500,
+    'nilai_bersih' => 6896500,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 97
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00105T',
+    'no_spm' => '00105A',
+    'no_sp2d' => '220201301004172',
+    'tgl_spp' => Carbon::parse('04/06/2022'),
+    'tgl_spm' => Carbon::parse('04/06/2022'),
+    'tgl_sp2d' => Carbon::parse('04/07/2022'),
+    'nilai_kotor' => 1200000,
+    'nilai_bersih' => 1200000,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 98
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00106T',
+    'no_spm' => '00106A',
+    'no_sp2d' => '220201301004173',
+    'tgl_spp' => Carbon::parse('04/06/2022'),
+    'tgl_spm' => Carbon::parse('04/06/2022'),
+    'tgl_sp2d' => Carbon::parse('04/07/2022'),
+    'nilai_kotor' => 4262500,
+    'nilai_bersih' => 4262500,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 99
+sp2d::create([
+    'jenis_tagihan' => '221 - GAJI LAINNYA',
+    'no_spp' => '00107T',
+    'no_spm' => '00107A',
+    'no_sp2d' => '220201301004204',
+    'tgl_spp' => Carbon::parse('04/06/2022'),
+    'tgl_spm' => Carbon::parse('04/06/2022'),
+    'tgl_sp2d' => Carbon::parse('04/07/2022'),
+    'nilai_kotor' => 13709000,
+    'nilai_bersih' => 13298300,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Uang Makan PNS Bulan Maret 2022) untuk 23 Pegawai'
+]);
+// 100
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00108T',
+    'no_spm' => '00108A',
+    'no_sp2d' => '220201301004340',
+    'tgl_spp' => Carbon::parse('04/06/2022'),
+    'tgl_spm' => Carbon::parse('04/06/2022'),
+    'tgl_sp2d' => Carbon::parse('04/08/2022'),
+    'nilai_kotor' => 11220000,
+    'nilai_bersih' => 10824500,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang (Honor Operasional Satker) bulan Maret 2022 a.n Danang Hadi Prakoso, dkk (15 Pegawai) sesuai SK KPA No. 012,013 s.d 017 dan 019 tanggal 03 Januari 2022'
+]);
+// 101
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00109T',
+    'no_spm' => '00109A',
+    'no_sp2d' => '220201301004271',
+    'tgl_spp' => Carbon::parse('04/06/2022'),
+    'tgl_spm' => Carbon::parse('04/06/2022'),
+    'tgl_sp2d' => Carbon::parse('04/08/2022'),
+    'nilai_kotor' => 640000,
+    'nilai_bersih' => 640000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang (Honor Pengelola Anggaran) bulan Maret 2022 a.n  Aan Mahturan (1 Orang Pegawai) sesuai SK No. 14/44.0/KU.200/I/2022 tanggal 03 Januari 2022.'
+]);
+// 102
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00110T',
+    'no_spm' => '00110A',
+    'no_sp2d' => '220201301004358',
+    'tgl_spp' => Carbon::parse('04/07/2022'),
+    'tgl_spm' => Carbon::parse('04/07/2022'),
+    'tgl_sp2d' => Carbon::parse('04/08/2022'),
+    'nilai_kotor' => 4510000,
+    'nilai_bersih' => 4038500,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang sesuai dengan Kuitansi no. 002/SRM/KW/III/2022 tanggal 04 Maret 2022; BAST nomor 148/SKIPM/44.0/PL.410/III/2022 tanggal 04 Maret 2022; BA. Pembayaran nomor 149/SKIPM/44.0/PL.410/III/2022 tanggal 04 Maret 2022'
+]);
+// 103
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00111T',
+    'no_spm' => '00111A',
+    'no_sp2d' => '220201301004697',
+    'tgl_spp' => Carbon::parse('04/12/2022'),
+    'tgl_spm' => Carbon::parse('04/12/2022'),
+    'tgl_sp2d' => Carbon::parse('04/13/2022'),
+    'nilai_kotor' => 101760344,
+    'nilai_bersih' => 95872562,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Tunjangan Kinerja Bulan Maret 2022) untuk 23 Pegawai'
+]);
+// 104
+sp2d::create([
+    'jenis_tagihan' => '211 - GAJI INDUK',
+    'no_spp' => '00112T',
+    'no_spm' => '00112A',
+    'no_sp2d' => '220201501000985',
+    'tgl_spp' => Carbon::parse('04/12/2022'),
+    'tgl_spm' => Carbon::parse('04/12/2022'),
+    'tgl_sp2d' => Carbon::parse('05/01/2022'),
+    'nilai_kotor' => 94643188,
+    'nilai_bersih' => 86188600,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Gaji Induk Bulan Mei 2022) untuk 23 Pegawai/69 Jiwa'
+]);
+// 105
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00113T',
+    'no_spm' => '00113A',
+    'no_sp2d' => '220201301005022',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 740000,
+    'nilai_bersih' => 740000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 270 Tgl 30 Maret 2022 (Tgl Dinas 30 Maret 2022), a/n Khaerun Naheru, dkk (2 Pegawai) '
+]);
+// 106
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00114T',
+    'no_spm' => '00114A',
+    'no_sp2d' => '220201301005021',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 3599000,
+    'nilai_bersih' => 3599000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 309 Tgl 18 Maret 2022 (Tgl Dinas 21 Maret s/d 25 Maret 2022), a/n Arisdianur (1 Pegawai)'
+]);
+// 107
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00115T',
+    'no_spm' => '00115A',
+    'no_sp2d' => '220201301005020',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 1645000,
+    'nilai_bersih' => 1645000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 327 Tgl 24 Maret 2022 (Tgl Dinas 25 Maret 2022), a/n Iromo, dkk (4 Pegawai)'
+]);
+// 108
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00116T',
+    'no_spm' => '00116A',
+    'no_sp2d' => '220201301005019',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 2465000,
+    'nilai_bersih' => 2465000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 350 Tgl 30 Maret 2022 (Tgl Dinas 30 Maret 2022), ST No. 357 Tgl 30 Maret 2022 (Tgl Dinas 31 Maret 2022), a/n Iromo, dkk (7 Pegawai)'
+]);
+// 109
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00117T',
+    'no_spm' => '00117A',
+    'no_sp2d' => '220201301005018',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 1480000,
+    'nilai_bersih' => 1480000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.338 Tgl 28 Maret 2022 (Tgl Dinas 28 Maret 2022),ST No.361 Tgl 1 April 2022 (Tgl Dinas 1 April 2022),ST No.385,ST No.387 Tgl 9 April 2022 (Tgl Dinas 9 April 2022),a/n Dani, dkk (4 Pegawai) '
+]);
+// 110
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00118T',
+    'no_spm' => '00118A',
+    'no_sp2d' => '220201301005017',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 1110000,
+    'nilai_bersih' => 1110000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.344 Tgl 29 Maret 2022 (Tgl Dinas 29 Maret 2022),ST No.371 Tgl 5 April 2022 (Tgl Dinas 5 April 2022),ST No.381 Tgl 8 April 2022 (Tgl Dinas 8 April 2022), a/n Arisdianur, dkk (3 Pegawai)'
+]);
+// 111
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00119T',
+    'no_spm' => '00119A',
+    'no_sp2d' => '220201301005016',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 600000,
+    'nilai_bersih' => 600000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.366 Tgl 4 April 2022 (Tgl Dinas 4 April 2022), a/n Arif Nur R, dkk (2 Pegawai) '
+]);
+// 112
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00120T',
+    'no_spm' => '00120A',
+    'no_sp2d' => '220201301005050',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 1275000,
+    'nilai_bersih' => 1275000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.278 Tgl 15 Maret 2022 (Tgl Dinas 16 Maret 2022), a/n Muklasin, dkk (3 Pegawai)'
+]);
+// 113
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00121T',
+    'no_spm' => '00121A',
+    'no_sp2d' => '220201301005015',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 1400000,
+    'nilai_bersih' => 1400000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.319 Tgl 22 Maret 2022 (Tgl Dinas 22 Maret 2022),ST No.340 Tgl 28 Maret 2022 (Tgl Dinas 28 Maret 2022), a/n Yasin Arifin, dkk (4 Pegawai) '
+]);
+// 114
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00122T',
+    'no_spm' => '00122A',
+    'no_sp2d' => '220201301005056',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.306 Tgl 19 Maret 2022 (Tgl Dinas 19 Maret 2022),ST No.317 Tgl 21 Maret 2022 (Tgl Dinas 21 Maret 2022),ST No.325 Tgl 24 Maret 2022 (Tgl Dinas 24 Maret 2022), a/n Muklasin, dkk (3 Pegawai)'
+]);
+// 115
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00123T',
+    'no_spm' => '00123A',
+    'no_sp2d' => '220201301005055',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.359 Tgl 31 Maret 2022 (Tgl Dinas 31 Maret 2022),ST No.364 Tgl 2 April 2022 (Tgl Dinas 2 April 2022),ST No.369 Tgl 4 April 2022 (Tgl Dinas 4 April 2022), a/n Lansan Fikr, dkk (3 Pegawai)'
+]);
+// 116
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00124T',
+    'no_spm' => '00124A',
+    'no_sp2d' => '220201301005054',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.373 Tgl 5 April 2022 (Tgl Dinas 5 April 2022),ST No.375 Tgl 6 April 2022 (Tgl Dinas 6 April 2022),ST No.383 Tgl 7 April 2022 (Tgl Dinas 7 April 2022), a/n Mustika Wati, dkk (3 Pegawai)'
+]);
+// 117
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00125T',
+    'no_spm' => '00125A',
+    'no_sp2d' => '220201301005053',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 500000,
+    'nilai_bersih' => 500000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.389 dan ST No. 391 Tgl 9 April 2022 (Tgl Dinas 9 April 2022), a/n Danang Hadi, dkk (2 Pegawai)'
+]);
+// 118
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00126T',
+    'no_spm' => '00126A',
+    'no_sp2d' => '220201301005052',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 1110000,
+    'nilai_bersih' => 1110000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.377 Tgl 7 April 2022 (Tgl Dinas 7 April 2022), a/n Iromo, dkk (3 Pegawai)'
+]);
+// 119
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00127T',
+    'no_spm' => '00127A',
+    'no_sp2d' => '220201301005051',
+    'tgl_spp' => Carbon::parse('04/14/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/20/2022'),
+    'nilai_kotor' => 3249000,
+    'nilai_bersih' => 3249000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.311 dan ST No.313 Tgl 21 Maret 2022 (Tgl Dinas 21 Maret s/d 22 Maret 2022), a/n Iromo, dkk (2 Pegawai)'
+]);
+// 120
+sp2d::create([
+    'jenis_tagihan' => '251 - THR Gaji PNS/TNI/Polri',
+    'no_spp' => '00128T',
+    'no_spm' => '00128A',
+    'no_sp2d' => '220201501000876',
+    'tgl_spp' => Carbon::parse('04/19/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/21/2022'),
+    'nilai_kotor' => 94974000,
+    'nilai_bersih' => 94630800,
+    'keterangan_sp2d' => 'Pembayaran THR Tahun 2022 Untuk 23 Pegawai/69 jiwa.'
+]);
+// 121
+sp2d::create([
+    'jenis_tagihan' => '254 - THR PPNPN',
+    'no_spp' => '00129T',
+    'no_spm' => '00129A',
+    'no_sp2d' => '220201501000880',
+    'tgl_spp' => Carbon::parse('04/19/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/21/2022'),
+    'nilai_kotor' => 29500000,
+    'nilai_bersih' => 29500000,
+    'keterangan_sp2d' => '	Pembayaran THR Keagamaan Tahun 2022 Untuk 9 Pegawai.'
+]);
+// 122
+sp2d::create([
+    'jenis_tagihan' => '259 - THR Tunkin',
+    'no_spp' => '00130T',
+    'no_spm' => '00130A',
+    'no_sp2d' => '220201301005146',
+    'tgl_spp' => Carbon::parse('04/19/2022'),
+    'tgl_spm' => Carbon::parse('04/19/2022'),
+    'tgl_sp2d' => Carbon::parse('04/21/2022'),
+    'nilai_kotor' => 50762494,
+    'nilai_bersih' => 48318525,
+    'keterangan_sp2d' => 'Pembayaran THR Tahun 2022 Untuk 23 Pegawai/Anggota Polri/Prajurit TNI'
+]);
+// 123
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00131T',
+    'no_spm' => '00131A',
+    'no_sp2d' => '220201301005453',
+    'tgl_spp' => Carbon::parse('04/22/2022'),
+    'tgl_spm' => Carbon::parse('04/25/2022'),
+    'tgl_sp2d' => Carbon::parse('04/25/2022'),
+    'nilai_kotor' => 1025000,
+    'nilai_bersih' => 1025000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.346 Tgl 28 Maret 2022 (Tgl Dinas 29 Maret s/d 01 April 2022), a/n Yasin Arifin (1 Pegawai)'
+]);
+// 124
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00132T',
+    'no_spm' => '00132A',
+    'no_sp2d' => '220201301005452',
+    'tgl_spp' => Carbon::parse('04/22/2022'),
+    'tgl_spm' => Carbon::parse('04/25/2022'),
+    'tgl_sp2d' => Carbon::parse('04/25/2022'),
+    'nilai_kotor' => 3488600,
+    'nilai_bersih' => 3488600,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.332 Tgl 25 Maret 2022 (Tgl Dinas 28 Maret s/d 29 Maret 2022), a/n Imaduddin (1 Pegawai)'
+]);
+// 125
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00133T',
+    'no_spm' => '00133A',
+    'no_sp2d' => '220201301005487',
+    'tgl_spp' => Carbon::parse('04/25/2022'),
+    'tgl_spm' => Carbon::parse('04/25/2022'),
+    'tgl_sp2d' => Carbon::parse('04/26/2022'),
+    'nilai_kotor' => 59781500,
+    'nilai_bersih' => 59781500,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 126
+sp2d::create([
+    'jenis_tagihan' => '227 - Penghasilan PPNPN Susulan',
+    'no_spp' => '00134T',
+    'no_spm' => '00134A',
+    'no_sp2d' => '220201301005867',
+    'tgl_spp' => Carbon::parse('05/09/2022'),
+    'tgl_spm' => Carbon::parse('05/09/2022'),
+    'tgl_sp2d' => Carbon::parse('05/10/2022'),
+    'nilai_kotor' => 33100000,
+    'nilai_bersih' => 32665970,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Berupa Honor PPNPN Bulan April Tahun 2022 untuk 10 Pegawai sesuai SK No: 50/44.0/TU.110/III/2022 dan SK No: 52/44.0/TU.110/III/2022 tanggal 01 Maret 2022 serta SK No: 54/44.0/TU.110/III/2022 tanggal 22 Maret 2022'
+]);
+// 127
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00135T',
+    'no_spm' => '00135A',
+    'no_sp2d' => '220201301005791',
+    'tgl_spp' => Carbon::parse('04/27/2022'),
+    'tgl_spm' => Carbon::parse('04/27/2022'),
+    'tgl_sp2d' => Carbon::parse('04/28/2022'),
+    'nilai_kotor' => 22398700,
+    'nilai_bersih' => 22398700,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 128
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00136T',
+    'no_spm' => '00136A',
+    'no_sp2d' => '220201301005790',
+    'tgl_spp' => Carbon::parse('04/27/2022'),
+    'tgl_spm' => Carbon::parse('04/27/2022'),
+    'tgl_sp2d' => Carbon::parse('04/28/2022'),
+    'nilai_kotor' => 5774500,
+    'nilai_bersih' => 5774500,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 129
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00137T',
+    'no_spm' => '00137A',
+    'no_sp2d' => '220201301005789',
+    'tgl_spp' => Carbon::parse('04/27/2022'),
+    'tgl_spm' => Carbon::parse('04/27/2022'),
+    'tgl_sp2d' => Carbon::parse('04/28/2022'),
+    'nilai_kotor' => 4150000,
+    'nilai_bersih' => 4150000,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 130
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00138T',
+    'no_spm' => '00138A',
+    'no_sp2d' => '220201301005788',
+    'tgl_spp' => Carbon::parse('04/27/2022'),
+    'tgl_spm' => Carbon::parse('04/27/2022'),
+    'tgl_sp2d' => Carbon::parse('04/28/2022'),
+    'nilai_kotor' => 506000,
+    'nilai_bersih' => 506000,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 131
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00139T',
+    'no_spm' => '00139A',
+    'no_sp2d' => '220201301005998',
+    'tgl_spp' => Carbon::parse('05/10/2022'),
+    'tgl_spm' => Carbon::parse('05/10/2022'),
+    'tgl_sp2d' => Carbon::parse('05/11/2022'),
+    'nilai_kotor' => 11220000,
+    'nilai_bersih' => 10824500,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang (Honor Operasional Satker) bulan April 2022 a.n Danang Hadi Prakoso, dkk (15 Pegawai) sesuai SK KPA No. 012, 013 s.d 017 dan 019 tanggal 03 Januari 2022'
+]);
+// 132
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00140T',
+    'no_spm' => '00140A',
+    'no_sp2d' => '220201301006000',
+    'tgl_spp' => Carbon::parse('05/10/2022'),
+    'tgl_spm' => Carbon::parse('05/10/2022'),
+    'tgl_sp2d' => Carbon::parse('05/11/2022'),
+    'nilai_kotor' => 640000,
+    'nilai_bersih' => 640000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang (Honor Pengelola Anggaran) bulan April 2022 a.n Aan Mahturan (1 Orang Pegawai) sesuai SK No. 14/44.0/KU.200/I/2022 tanggal 03 Januari 2022'
+]);
+// 133
+sp2d::create([
+    'jenis_tagihan' => '211 - GAJI INDUK',
+    'no_spp' => '00141T',
+    'no_spm' => '00141A',
+    'no_sp2d' => '220201501001399',
+    'tgl_spp' => Carbon::parse('05/10/2022'),
+    'tgl_spm' => Carbon::parse('05/10/2022'),
+    'tgl_sp2d' => Carbon::parse('06/01/2022'),
+    'nilai_kotor' => 94568354,
+    'nilai_bersih' => 86106100,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Gaji Induk Bulan Juni 2022) untuk 23 Pegawai/69 Jiwa.'
+]);
+// 134
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00142T',
+    'no_spm' => '00142A',
+    'no_sp2d' => '220201301006052',
+    'tgl_spp' => Carbon::parse('05/10/2022'),
+    'tgl_spm' => Carbon::parse('05/10/2022'),
+    'tgl_sp2d' => Carbon::parse('05/11/2022'),
+    'nilai_kotor' => 13435000,
+    'nilai_bersih' => 13018750,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Uang Makan Bulan April 2022) untuk 23 Pegawa'
+]);
+// 135
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00143T',
+    'no_spm' => '00143A',
+    'no_sp2d' => '220201301006231',
+    'tgl_spp' => Carbon::parse('05/12/2022'),
+    'tgl_spm' => Carbon::parse('05/12/2022'),
+    'tgl_sp2d' => Carbon::parse('05/13/2022'),
+    'nilai_kotor' => 101477014,
+    'nilai_bersih' => 95616424,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Tunjangan Kinerja Bulan April 2022) untuk 23 Pegawai'
+]);
+// 136
+sp2d::create([
+    'jenis_tagihan' => '317 - GUP-KKP',
+    'no_spp' => '00144T',
+    'no_spm' => '00144A',
+    'no_sp2d' => '220201301006715',
+    'tgl_spp' => Carbon::parse('05/19/2022'),
+    'tgl_spm' => Carbon::parse('05/19/2022'),
+    'tgl_sp2d' => Carbon::parse('05/20/2022'),
+    'nilai_kotor' => 4645600,
+    'nilai_bersih' => 4645600,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 137
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00145T',
+    'no_spm' => '00145A',
+    'no_sp2d' => '220201301006879',
+    'tgl_spp' => Carbon::parse('05/19/2022'),
+    'tgl_spm' => Carbon::parse('05/19/2022'),
+    'tgl_sp2d' => Carbon::parse('05/23/2022'),
+    'nilai_kotor' => 1850000,
+    'nilai_bersih' => 1850000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 468 Tanggal 12 Mei 2022 (Tanggal Dinas 13 Mei 2022), ST No. 485 Tanggal 16 Mei 2022 (Tanggal Dinas 16 Mei 2022), a/n Yasin Arifin, dkk (5 Pegawai)'
+]);
+// 138
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00146T',
+    'no_spm' => '00146A',
+    'no_sp2d' => '220201301006878',
+    'tgl_spp' => Carbon::parse('05/19/2022'),
+    'tgl_spm' => Carbon::parse('05/19/2022'),
+    'tgl_sp2d' => Carbon::parse('05/23/2022'),
+    'nilai_kotor' => 1110000,
+    'nilai_bersih' => 1110000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 436, ST No. 438 dan ST No. 450 Tanggal 26 April 2022 (Tanggal Dinas 26 April 2022), a/n Atik Lestantun, dkk (3 Pegawai)'
+]);
+// 139
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00147T',
+    'no_spm' => '00147A',
+    'no_sp2d' => '220201301006883',
+    'tgl_spp' => Carbon::parse('05/19/2022'),
+    'tgl_spm' => Carbon::parse('05/19/2022'),
+    'tgl_sp2d' => Carbon::parse('05/23/2022'),
+    'nilai_kotor' => 740000,
+    'nilai_bersih' => 740000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 464 Tanggal 12 Mei 2022 (Tanggal Dinas 12 Mei 2022), ST No. 471 Tanggal 13 Mei 2022 (Tanggal Dinas 13 Mei 2022), a/n Sartini Sabir, dkk (2 Pegawai)'
+]);
+// 140
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00148T',
+    'no_spm' => '00148A',
+    'no_sp2d' => '220201301006882',
+    'tgl_spp' => Carbon::parse('05/19/2022'),
+    'tgl_spm' => Carbon::parse('05/19/2022'),
+    'tgl_sp2d' => Carbon::parse('05/23/2022'),
+    'nilai_kotor' => 740000,
+    'nilai_bersih' => 740000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 493 dan ST No. 495 Tanggal 17 Mei 2022 (Tanggal Dinas 17 Mei 2022), a/n Atik Lestantun, dkk (2 Pegawai)'
+]);
+// 141
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00149T',
+    'no_spm' => '00149A',
+    'no_sp2d' => '220201301006881',
+    'tgl_spp' => Carbon::parse('05/19/2022'),
+    'tgl_spm' => Carbon::parse('05/19/2022'),
+    'tgl_sp2d' => Carbon::parse('05/23/2022'),
+    'nilai_kotor' => 500000,
+    'nilai_bersih' => 500000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 452 Tanggal 26 April 2022 (Tanggal Dinas 26 April 2022), ST No. 454 Tanggal 27 April 2022 (Tanggal Dinas 27 April 2022), a/n Muklasin, dkk (2 Pegawai)'
+]);
+// 142
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00150T',
+    'no_spm' => '00150A',
+    'no_sp2d' => '220201301006880',
+    'tgl_spp' => Carbon::parse('05/19/2022'),
+    'tgl_spm' => Carbon::parse('05/19/2022'),
+    'tgl_sp2d' => Carbon::parse('05/23/2022'),
+    'nilai_kotor' => 500000,
+    'nilai_bersih' => 500000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 456 dan ST No. 458 Tanggal 28 April 2022 (Tanggal Dinas 28 April 2022), a/n Mustika Wati, dkk (2 Pegawai)'
+]);
+// 143
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00151T',
+    'no_spm' => '00151A',
+    'no_sp2d' => '220201301006833',
+    'tgl_spp' => Carbon::parse('05/19/2022'),
+    'tgl_spm' => Carbon::parse('05/19/2022'),
+    'tgl_sp2d' => Carbon::parse('05/23/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 473 dan ST No. 475 Tanggal 12 Mei 2022 (Tanggal Dinas 12 Mei 2022), ST No. 479 Tanggal 13 Mei 2022 (Tanggal Dinas 13 Mei 2022), a/n M. Taufiq R, dkk (3 Pegawai)'
+]);
+// 144
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00152T',
+    'no_spm' => '00152A',
+    'no_sp2d' => '220201301006832',
+    'tgl_spp' => Carbon::parse('05/19/2022'),
+    'tgl_spm' => Carbon::parse('05/19/2022'),
+    'tgl_sp2d' => Carbon::parse('05/23/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 481 Tanggal 13 Mei 2022 (Tanggal Dinas 13 Mei 2022), ST No. 489 dan ST No. 491 Tanggal 14 Mei 2022 (Tanggal Dinas 14 Mei 2022), a/n Muklasin, dkk (3 pegawai)'
+]);
+// 145
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00153T',
+    'no_spm' => '00153A',
+    'no_sp2d' => '220201301006831',
+    'tgl_spp' => Carbon::parse('05/19/2022'),
+    'tgl_spm' => Carbon::parse('05/19/2022'),
+    'tgl_sp2d' => Carbon::parse('05/23/2022'),
+    'nilai_kotor' => 740000,
+    'nilai_bersih' => 740000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 446 dan ST No. 448 Tanggal 26 April 2022 (Tanggal Dinas 26 April 2022), a/n Khaerun Naheru, dkk (2 Pegawai)'
+]);
+// 146
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00154T',
+    'no_spm' => '00154A',
+    'no_sp2d' => '220201301006830',
+    'tgl_spp' => Carbon::parse('05/19/2022'),
+    'tgl_spm' => Carbon::parse('05/19/2022'),
+    'tgl_sp2d' => Carbon::parse('05/23/2022'),
+    'nilai_kotor' => 740000,
+    'nilai_bersih' => 740000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 460 Tanggal 09 Mei 2022 (Tanggal Dinas 09 Mei 2022), ST No. 466 Tanggal 12 Mei 2022 (Tanggal Dinas 12 Mei 2022), a/n Yasin Arifin, dkk (2 Pegawai)'
+]);
+// 147
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00155T',
+    'no_spm' => '00155A',
+    'no_sp2d' => '220201301006884',
+    'tgl_spp' => Carbon::parse('05/19/2022'),
+    'tgl_spm' => Carbon::parse('05/19/2022'),
+    'tgl_sp2d' => Carbon::parse('05/23/2022'),
+    'nilai_kotor' => 3807900,
+    'nilai_bersih' => 3807900,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No. 483 Tanggal 13 Mei 2022 (Tanggal Dinas 14 Mei s/d 16 Mei 2022), a/n Iromo (1 Pegawai)'
+]);
+// 148
+sp2d::create([
+    'jenis_tagihan' => '217 - Penghasilan PPNPN Induk',
+    'no_spp' => '00156T',
+    'no_spm' => '00156A',
+    'no_sp2d' => '220201501001480',
+    'tgl_spp' => Carbon::parse('05/24/2022'),
+    'tgl_spm' => Carbon::parse('05/24/2022'),
+    'tgl_sp2d' => Carbon::parse('06/01/2022'),
+    'nilai_kotor' => 33100000,
+    'nilai_bersih' => 32665970,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Berupa Honor PPNPN Bulan Mei Tahun 2022 untuk 10 Pegawai sesuai SK No: 52/44.0/TU.110/III/2022 tgl 01-03-2022; SK No: 54/44.0/TU.110/III/2022 tgl 22-03-2022 dan SK No: 65/44.0/TU.110/IV/2022 tgl 28-04-2022'
+]);
+// 149
+sp2d::create([
+    'jenis_tagihan' => '111 - NON GAJI KONTRAKTUAL',
+    'no_spp' => '00161T',
+    'no_spm' => '00161A',
+    'no_sp2d' => '220201302004068',
+    'tgl_spp' => Carbon::parse('06/02/2022'),
+    'tgl_spm' => Carbon::parse('06/02/2022'),
+    'tgl_sp2d' => Carbon::parse('06/07/2022'),
+    'nilai_kotor' => 83900000,
+    'nilai_bersih' => 74451802,
+    'keterangan_sp2d' => 'Belanja Barang sesuai dengan SPK No.17.1/SKIPM/44.0/PL.410/V/2022 tanggal 17 Mei 2022;BAST no.18.02/SKIPM/44.0/PL.410/V/2022 tanggal 18 Mei 2022;BA.Pembayaran no.02.01/SKIPM/44.0/PL.410/VI/2022 tanggal 2 Juni 2022;Nilai Kontrak Rp.83.900.000,-'
+]);
+// 150
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00170T',
+    'no_spm' => '00170A',
+    'no_sp2d' => '220201301007500',
+    'tgl_spp' => Carbon::parse('06/02/2022'),
+    'tgl_spm' => Carbon::parse('06/03/2022'),
+    'tgl_sp2d' => Carbon::parse('06/06/2022'),
+    'nilai_kotor' => 54933600,
+    'nilai_bersih' => 54933600,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 151
+sp2d::create([
+    'jenis_tagihan' => '221 - GAJI LAINNYA',
+    'no_spp' => '00171T',
+    'no_spm' => '00171A',
+    'no_sp2d' => '220201301007551',
+    'tgl_spp' => Carbon::parse('06/03/2022'),
+    'tgl_spm' => Carbon::parse('06/03/2022'),
+    'tgl_sp2d' => Carbon::parse('06/06/2022'),
+    'nilai_kotor' => 9686000,
+    'nilai_bersih' => 9402950,
+    'keterangan_sp2d' => 'Pemabyaran Belanja Pegawai (Uang Makan Bulan Mei 2022) untuk 23 Pegawai.'
+]);
+// 152
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00172T',
+    'no_spm' => '00172A',
+    'no_sp2d' => '220201301007807',
+    'tgl_spp' => Carbon::parse('06/07/2022'),
+    'tgl_spm' => Carbon::parse('06/07/2022'),
+    'tgl_sp2d' => Carbon::parse('06/08/2022'),
+    'nilai_kotor' => 10971000,
+    'nilai_bersih' => 10643150,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Uang Lembur PNS Bulan Januari 2022) sesuai SPK No: SP.140/44.0/I/2022 dan SP.140a/44.0/I/2022 tanggal 03 Januari 2022.'
+]);
+// 153
+sp2d::create([
+    'jenis_tagihan' => '221 - GAJI LAINNYA',
+    'no_spp' => '00176T',
+    'no_spm' => '00176A',
+    'no_sp2d' => '220201301007951',
+    'tgl_spp' => Carbon::parse('06/08/2022'),
+    'tgl_spm' => Carbon::parse('06/08/2022'),
+    'tgl_sp2d' => Carbon::parse('06/09/2022'),
+    'nilai_kotor' => 9435000,
+    'nilai_bersih' => 9147800,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Uang Lembur PNS  Bulan Februari 2022) untuk 23 Pegawai sesuai SPK No: SP.274/44.0/KP.440/II/2022 dan No: SP.443/44.0/KP.440/II/2022 tanggal 01 Februari 2022.'
+]);
+// 154
+sp2d::create([
+    'jenis_tagihan' => '221 - GAJI LAINNYA',
+    'no_spp' => '00177T',
+    'no_spm' => '00177A',
+    'no_sp2d' => '220201301007952',
+    'tgl_spp' => Carbon::parse('06/08/2022'),
+    'tgl_spm' => Carbon::parse('06/08/2022'),
+    'tgl_sp2d' => Carbon::parse('06/09/2022'),
+    'nilai_kotor' => 8595000,
+    'nilai_bersih' => 8335900,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Uang Lembur PNS Bulan Maret 2022) untuk 23 Pegawai sesuai SPK No: No: SP.444/44.0/KP.440/III/2022 dan SP.445/44.0/KP.440/III/2022 tanggal 01 Maret 2022.'
+]);
+// 155
+sp2d::create([
+    'jenis_tagihan' => '221 - GAJI LAINNYA',
+    'no_spp' => '00178T',
+    'no_spm' => '00178A',
+    'no_sp2d' => '220201301007950',
+    'tgl_spp' => Carbon::parse('06/08/2022'),
+    'tgl_spm' => Carbon::parse('06/08/2022'),
+    'tgl_sp2d' => Carbon::parse('06/09/2022'),
+    'nilai_kotor' => 7406000,
+    'nilai_bersih' => 7186500,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Uang Lembur PNS Bulan April 2022) untuk 22 Pegawai sesuai SPK No: SP.477/44.0/KP.440/IV/2022 dan SP.478/44.0/KP.440/IV/2022 tanggal 01 April 2022'
+]);
+// 156
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00180T',
+    'no_spm' => '00180A',
+    'no_sp2d' => '220201301008077',
+    'tgl_spp' => Carbon::parse('06/08/2022'),
+    'tgl_spm' => Carbon::parse('06/09/2022'),
+    'tgl_sp2d' => Carbon::parse('06/09/2022'),
+    'nilai_kotor' => 640000,
+    'nilai_bersih' => 640000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang (Honor Pengelola Anggaran) bulan Mei 2022 a.n Aan Mahturan (1 Pegawai) sesuai Sk No. 14/44.0/KU.220/I/2022 tanggal 03 Januari 2022'
+]);
+// 157
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00181T',
+    'no_spm' => '00181A',
+    'no_sp2d' => '220201301008045',
+    'tgl_spp' => Carbon::parse('06/08/2022'),
+    'tgl_spm' => Carbon::parse('06/08/2022'),
+    'tgl_sp2d' => Carbon::parse('06/09/2022'),
+    'nilai_kotor' => 101759088,
+    'nilai_bersih' => 95891915,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Tunjangan Kinerja Bulan Mei 2022) untuk 23 Pegawai.'
+]);
+// 158
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00182T',
+    'no_spm' => '00182A',
+    'no_sp2d' => '220201301008078',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/09/2022'),
+    'tgl_sp2d' => Carbon::parse('06/09/2022'),
+    'nilai_kotor' => 11964000,
+    'nilai_bersih' => 11531300,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang(Honor Operasional Satker) bulan Mei 2022 a.n Danang Hadi Pakoso, dkk (15 Pegawai) sesuai SK KPA No. 012, 013 s.d 017 dan 019 tanggal 03 Januari 2022 '
+]);
+// 159
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00183T',
+    'no_spm' => '00183A',
+    'no_sp2d' => '220201301008338',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/10/2022'),
+    'tgl_sp2d' => Carbon::parse('06/13/2022'),
+    'nilai_kotor' => 1110000,
+    'nilai_bersih' => 1110000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.576 Tgl 4 Juni 2022 (Tgl Dinas 4 Juni 2022),SPD No.578 Tgl 6 Juni 2022 (Tgl Dinas 6 Juni 2022),SPD No.606 Tgl 8 Juni 2022 (Tgl Dinas 8 Juni 2022), a/n Khaerun N, dkk (3 Pegawai)'
+]);
+// 160
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00184T',
+    'no_spm' => '00184A',
+    'no_sp2d' => '220201301008337',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/10/2022'),
+    'tgl_sp2d' => Carbon::parse('06/13/2022'),
+    'nilai_kotor' => 1000000,
+    'nilai_bersih' => 1000000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.583 Tgl 4 Juni 2022 (Tgl Dinas 4 Juni 2022),ST No.585 Tgl 6 Juni 2022 (Tgl Dinas 6 Juni 2022),ST No.599 dan ST No.601 Tgl 7 Juni 2022 (Tgl Dinas 7 Juni 2022), a/n Mustika, dkk (4 Pegawai)'
+]);
+// 161
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00185T',
+    'no_spm' => '00185A',
+    'no_sp2d' => '220201301008336',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/10/2022'),
+    'tgl_sp2d' => Carbon::parse('06/13/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.570 dan ST No.574 Tgl 3 Juni 2022 (Tgl Dinas 3 Juni 2022), ST No.572 Tgl 4 Juni 2022 (Tgl Dinas 4 Juni 2022), a/n M. Taufik, dkk (3 Pegawai)'
+]);
+// 162
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00186T',
+    'no_spm' => '00186A',
+    'no_sp2d' => '220201301008335',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/10/2022'),
+    'tgl_sp2d' => Carbon::parse('06/13/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.564 Tgl 31 Mei 2022 (Tgl Dinas 31 Mei 2022), ST No.566 dan ST No.568 Tgl 2 Juni 2022 (Tgl Dinas 2 Juni 2022), a/n Mustika Wati, dkk (3 Pegawai)'
+]);
+// 163
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00187T',
+    'no_spm' => '00187A',
+    'no_sp2d' => '220201301008334',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/10/2022'),
+    'tgl_sp2d' => Carbon::parse('06/13/2022'),
+    'nilai_kotor' => 1480000,
+    'nilai_bersih' => 1480000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.580 Tgl 6 Juni 2022 (Tgl Dinas 6 Juni 2022), ST No.603 Tgl 8 Juni 2022 (Tgl Dinas 8 Juni 2022), a/n Atik L, dkk (4 Pegawai) '
+]);
+// 164
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00188T',
+    'no_spm' => '00188A',
+    'no_sp2d' => '220201301008333',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/10/2022'),
+    'tgl_sp2d' => Carbon::parse('06/13/2022'),
+    'nilai_kotor' => 1850000,
+    'nilai_bersih' => 1850000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.587 Tgl 6 Juni 2022 (Tgl Dinas 6 Juni 2022), ST No.591 Tgl 7 Juni 2022 (Tgl Dinas 7 Juni 2022), a/n Iromo, dkk (5 Pegawai)'
+]);
+// 165
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00189T',
+    'no_spm' => '00189A',
+    'no_sp2d' => '220201301008332',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/10/2022'),
+    'tgl_sp2d' => Carbon::parse('06/13/2022'),
+    'nilai_kotor' => 2220000,
+    'nilai_bersih' => 2220000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.535 Tgl 22 Mei 2022 (Tgl Dinas 22 Mei 2022), ST No.511 Tgl 30 Mei 2022 (Tgl Dinas 30 Mei 2022), a/n Iromo, dkk (6 Pegawai)'
+]);
+// 166
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00190T',
+    'no_spm' => '00190A',
+    'no_sp2d' => '220201301008331',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/10/2022'),
+    'tgl_sp2d' => Carbon::parse('06/13/2022'),
+    'nilai_kotor' => 1480000,
+    'nilai_bersih' => 1480000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.542 Tgl 24 Mei 2022 (Tgl Dinas 24 Mei 2022), ST No.508 Tgl 27 Mei 2022 (Tgl Dinas 27 Mei 2022), a/n Yasin A, dkk (4 Pegawai) '
+]);
+// 167
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00191T',
+    'no_spm' => '00191A',
+    'no_sp2d' => '220201301008187',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/09/2022'),
+    'tgl_sp2d' => Carbon::parse('06/10/2022'),
+    'nilai_kotor' => 4618500,
+    'nilai_bersih' => 4618500,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 168
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00192T',
+    'no_spm' => '00192A',
+    'no_sp2d' => '220201301008188',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/09/2022'),
+    'tgl_sp2d' => Carbon::parse('06/10/2022'),
+    'nilai_kotor' => 3700000,
+    'nilai_bersih' => 3700000,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 169
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00193T',
+    'no_spm' => '00193A',
+    'no_sp2d' => '220201301008189',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/09/2022'),
+    'tgl_sp2d' => Carbon::parse('06/10/2022'),
+    'nilai_kotor' => 3050000,
+    'nilai_bersih' => 3050000,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 170
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00194T',
+    'no_spm' => '00194A',
+    'no_sp2d' => '220201301008190',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/09/2022'),
+    'tgl_sp2d' => Carbon::parse('06/10/2022'),
+    'nilai_kotor' => 25100000,
+    'nilai_bersih' => 25100000,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 171
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00195T',
+    'no_spm' => '00195A',
+    'no_sp2d' => '220201301008339',
+    'tgl_spp' => Carbon::parse('06/09/2022'),
+    'tgl_spm' => Carbon::parse('06/10/2022'),
+    'tgl_sp2d' => Carbon::parse('06/13/2022'),
+    'nilai_kotor' => 1400000,
+    'nilai_bersih' => 1400000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.555 Tgl 31 Mei 2022 (Tgl Dinas 31 Mei 2022), ST No.596 Tgl 7 Juni 2022 (Tgl Dinas 7 Juni 2022), a/n Arisdianur H, dkk (4 Pegawai)'
+]);
+// 172
+sp2d::create([
+    'jenis_tagihan' => '211 - GAJI INDUK',
+    'no_spp' => '00196T',
+    'no_spm' => '00196A',
+    'no_sp2d' => '220201501001606',
+    'tgl_spp' => Carbon::parse('06/10/2022'),
+    'tgl_spm' => Carbon::parse('06/10/2022'),
+    'tgl_sp2d' => Carbon::parse('07/01/2022'),
+    'nilai_kotor' => 94568309,
+    'nilai_bersih' => 86102000,
+    'keterangan_sp2d' => '	Pembayaran Belanja Pegawai (Gaji Induk Bulan Juli 2022) untuk 23 Pegawai/69 Jiwa.'
+]);
+// 173
+sp2d::create([
+    'jenis_tagihan' => '217 - Penghasilan PPNPN Induk',
+    'no_spp' => '00198T',
+    'no_spm' => '00198A',
+    'no_sp2d' => '220201501001722',
+    'tgl_spp' => Carbon::parse('06/21/2022'),
+    'tgl_spm' => Carbon::parse('06/21/2022'),
+    'tgl_sp2d' => Carbon::parse('07/01/2022'),
+    'nilai_kotor' => 33100000,
+    'nilai_bersih' => 32665970,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Berupa Honor PPNPN Bulan Juni Tahun 2022 untuk 10 Pegawai sesuai SK No: 52/44.0/TU.110/III/2022 tanggal 01-03-2022; SK No: 54/44.0/TU.110/III/2022 tanggal 22-03-2022 dan SK No: 65/44.0/TU.110/IV/2022 tanggal 28-04-2022'
+]);
+// 174
+sp2d::create([
+    'jenis_tagihan' => '261 - Gaji Ke-13 PNS/TNI/Polri',
+    'no_spp' => '00199T',
+    'no_spm' => '00199A',
+    'no_sp2d' => '220201501001809',
+    'tgl_spp' => Carbon::parse('06/24/2022'),
+    'tgl_spm' => Carbon::parse('06/24/2022'),
+    'tgl_sp2d' => Carbon::parse('07/01/2022'),
+    'nilai_kotor' => 94899200,
+    'nilai_bersih' => 94556000,
+    'keterangan_sp2d' => 'Pembayaran Gaji Ketiga Belas Tahun 2022 Untuk 23 Pegawai'
+]);
+// 175
+sp2d::create([
+    'jenis_tagihan' => '269 - Tukin Ke-13',
+    'no_spp' => '00200T',
+    'no_spm' => '00200A',
+    'no_sp2d' => '220201301009130',
+    'tgl_spp' => Carbon::parse('06/24/2022'),
+    'tgl_spm' => Carbon::parse('06/24/2022'),
+    'tgl_sp2d' => Carbon::parse('07/01/2022'),
+    'nilai_kotor' => 50762494,
+    'nilai_bersih' => 48318525,
+    'keterangan_sp2d' => 'Pembayaran Tukin ke-13 Tahun 2022 Untuk 23 Pegawa'
+]);
+// 176
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00201T',
+    'no_spm' => '00201A',
+    'no_sp2d' => '220201301010073',
+    'tgl_spp' => Carbon::parse('07/05/2022'),
+    'tgl_spm' => Carbon::parse('07/05/2022'),
+    'tgl_sp2d' => Carbon::parse('07/06/2022'),
+    'nilai_kotor' => 59029700,
+    'nilai_bersih' => 59029700,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk Keperluan Belanja Barang'
+]);
+// 177
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00202T',
+    'no_spm' => '00202A',
+    'no_sp2d' => '220201301010164',
+    'tgl_spp' => Carbon::parse('07/06/2022'),
+    'tgl_spm' => Carbon::parse('07/06/2022'),
+    'tgl_sp2d' => Carbon::parse('07/07/2022'),
+    'nilai_kotor' => 11964000,
+    'nilai_bersih' => 11531300,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang (Honor Operasional Satker) bulan Juni 2022 a.n Danang Hadi Prakoso, dkk (15 Pegawai) sesuai SK KPA No. 012, 013 s.d 017 dan 019 tanggal 03 Januari 2022'
+]);
+// 178
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00203T',
+    'no_spm' => '00203A',
+    'no_sp2d' => '220201301010176',
+    'tgl_spp' => Carbon::parse('07/06/2022'),
+    'tgl_spm' => Carbon::parse('07/06/2022'),
+    'tgl_sp2d' => Carbon::parse('07/07/2022'),
+    'nilai_kotor' => 640000,
+    'nilai_bersih' => 640000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang (Honor Pengelola Anggaran) bulan Juni 2022 a.n Aan Mahturan (1 Orang pegawai) sesuai SK No. 14/44.0/KU.200/I/2022 tanggal 03 Januari 2022'
+]);
+// 179
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00204T',
+    'no_spm' => '00204A',
+    'no_sp2d' => '220201301010246',
+    'tgl_spp' => Carbon::parse('07/07/2022'),
+    'tgl_spm' => Carbon::parse('07/07/2022'),
+    'tgl_sp2d' => Carbon::parse('07/07/2022'),
+    'nilai_kotor' => 5470500,
+    'nilai_bersih' => 5470500,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk keperluan Belanja Barang'
+]);
+// 180
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00205T',
+    'no_spm' => '00205A',
+    'no_sp2d' => '220201301010247',
+    'tgl_spp' => Carbon::parse('07/07/2022'),
+    'tgl_spm' => Carbon::parse('07/07/2022'),
+    'tgl_sp2d' => Carbon::parse('07/07/2022'),
+    'nilai_kotor' => 15352000,
+    'nilai_bersih' => 15352000,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk keperluan Belanja Barang'
+]);
+// 181
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00206T',
+    'no_spm' => '00206A',
+    'no_sp2d' => '220201301010249',
+    'tgl_spp' => Carbon::parse('07/07/2022'),
+    'tgl_spm' => Carbon::parse('07/07/2022'),
+    'tgl_sp2d' => Carbon::parse('07/07/2022'),
+    'nilai_kotor' => 2400000,
+    'nilai_bersih' => 2400000,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk keperluan Belanja Barang'
+]);
+// 182
+sp2d::create([
+    'jenis_tagihan' => '312 - GUP',
+    'no_spp' => '00207T',
+    'no_spm' => '00207A',
+    'no_sp2d' => '220201301010250',
+    'tgl_spp' => Carbon::parse('07/07/2022'),
+    'tgl_spm' => Carbon::parse('07/07/2022'),
+    'tgl_sp2d' => Carbon::parse('07/07/2022'),
+    'nilai_kotor' => 4118800,
+    'nilai_bersih' => 4118800,
+    'keterangan_sp2d' => 'Penggantian Uang Persediaan untuk keperluan Belanja Barang'
+]);
+// 183
+sp2d::create([
+    'jenis_tagihan' => '221 - GAJI LAINNYA',
+    'no_spp' => '00208T',
+    'no_spm' => '00208A',
+    'no_sp2d' => '220201301010385',
+    'tgl_spp' => Carbon::parse('07/07/2022'),
+    'tgl_spm' => Carbon::parse('07/07/2022'),
+    'tgl_sp2d' => Carbon::parse('07/08/2022'),
+    'nilai_kotor' => 14421000,
+    'nilai_bersih' => 13999200,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Uang Makan Bulan Juni 2022) untuk 23 Pegawai'
+]);
+// 184
+sp2d::create([
+    'jenis_tagihan' => '237 - LS-BANYAK PENERIMA',
+    'no_spp' => '00209T',
+    'no_spm' => '00209A',
+    'no_sp2d' => '220201301010416',
+    'tgl_spp' => Carbon::parse('07/08/2022'),
+    'tgl_spm' => Carbon::parse('07/08/2022'),
+    'tgl_sp2d' => Carbon::parse('07/11/2022'),
+    'nilai_kotor' => 102569533,
+    'nilai_bersih' => 96555646,
+    'keterangan_sp2d' => 'Pembayaran Belanja Pegawai (Tunjangan Kinerja Bulan Juni 2022) untuk 23 Pegawai'
+]);
+// 185
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00211T',
+    'no_spm' => '00211A',
+    'no_sp2d' => '220201301010731',
+    'tgl_spp' => Carbon::parse('07/12/2022'),
+    'tgl_spm' => Carbon::parse('07/13/2022'),
+    'tgl_sp2d' => Carbon::parse('07/14/2022'),
+    'nilai_kotor' => 1110000,
+    'nilai_bersih' => 1110000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.679 Tgl 29 Juni 2022 (Tgl Dinas 29 Juni 2022), ST No.686 Tgl 1 Juli 2022 (Tgl Dinas 1 Juli 2022), ST No.691 Tgl 2 Juli 2022 (Tgl Dinas 2 Juli 2022), a/n Lansan Fikr, dkk (3 Pegawai)'
+]);
+// 186
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00212T',
+    'no_spm' => '00212A',
+    'no_sp2d' => '220201301010732',
+    'tgl_spp' => Carbon::parse('07/12/2022'),
+    'tgl_spm' => Carbon::parse('07/13/2022'),
+    'tgl_sp2d' => Carbon::parse('07/14/2022'),
+    'nilai_kotor' => 750000,
+    'nilai_bersih' => 750000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.709 Tgl 6 Juli 2022 (Tgl Dinas 6 Juli 2022), ST No.711 dan ST No.713 Tgl 8 Juli 2022 (Tgl Dinas 8 Juli 2022), a/n Muklasin, dkk (3 Pegawai)'
+]);
+// 187
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00213T',
+    'no_spm' => '00213A',
+    'no_sp2d' => '220201301010733',
+    'tgl_spp' => Carbon::parse('07/12/2022'),
+    'tgl_spm' => Carbon::parse('07/13/2022'),
+    'tgl_sp2d' => Carbon::parse('07/14/2022'),
+    'nilai_kotor' => 1000000,
+    'nilai_bersih' => 1000000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.693 Tgl 2 Juli 2022 (Tgl Dinas 2 Juli 2022), ST No.695 dan ST No.697 Tgl 4 Juli 2022 (Tgl Dinas 4 Juli 2022), ST No. 704 Tgl 5 Juli 2022 (Tgl Dinas 5 Juli 2022), a/n Muklain, dkk (4 Pegawai)'
+]);
+// 188
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00214T',
+    'no_spm' => '00214A',
+    'no_sp2d' => '220201301010734',
+    'tgl_spp' => Carbon::parse('07/12/2022'),
+    'tgl_spm' => Carbon::parse('07/13/2022'),
+    'tgl_sp2d' => Carbon::parse('07/14/2022'),
+    'nilai_kotor' => 2220000,
+    'nilai_bersih' => 2220000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.681 Tgl 29 Juni 2022 (Tgl Dinas 29 Juni 2022), ST No.719 Tgl 11 Juli 2022 (Tgl Dinas 11 Juli 2022), ST No.722 Tgl 12 Juli 2022 (Tgl Dinas 12 Juli 2022), a/n Atik L, dkk (6 Pegawai)'
+]);
+// 189
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00215T',
+    'no_spm' => '00215A',
+    'no_sp2d' => '220201301010676',
+    'tgl_spp' => Carbon::parse('07/12/2022'),
+    'tgl_spm' => Carbon::parse('07/13/2022'),
+    'tgl_sp2d' => Carbon::parse('07/14/2022'),
+    'nilai_kotor' => 2000000,
+    'nilai_bersih' => 2000000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.673 Tgl 28 Juni 2022 (Tgl Dinas 28 Juni 2022), ST No.699 Tgl 6 Juli 2022 (Tgl Dinas 6 Juli 2022), a/n Arisdianur H, dkk (6 Pegawai)'
+]);
+// 190
+sp2d::create([
+    'jenis_tagihan' => '231 - NON GAJI',
+    'no_spp' => '00216T',
+    'no_spm' => '00216A',
+    'no_sp2d' => '220201301010677',
+    'tgl_spp' => Carbon::parse('07/12/2022'),
+    'tgl_spm' => Carbon::parse('07/13/2022'),
+    'tgl_sp2d' => Carbon::parse('07/14/2022'),
+    'nilai_kotor' => 740000,
+    'nilai_bersih' => 740000,
+    'keterangan_sp2d' => 'Pembayaran Belanja Barang Perjalanan Dinas sesuai ST No.676 Tgl 29 Juni 2022 (Tgl Dinas 29 Juni 2022), a/n Iromo, dkk (2 Pegawai)'
+]);
+        // seeder untuk detilsp2d
+        // 1
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 2,
+    'harga_detilsp2d' => 13427200
+]);
+// 2
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 2,
+    'harga_detilsp2d' => 176
+]);
+// 3
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 2,
+    'harga_detilsp2d' => 994560
+]);
+// 4
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 2,
+    'harga_detilsp2d' => 325246
+]);
+// 5
+detilsp2d::create([
+    'detil_id' => 122,
+    'sp2d_id' => 2,
+    'harga_detilsp2d' => 360000
+]);
+// 6
+detilsp2d::create([
+    'detil_id' => 125,
+    'sp2d_id' => 2,
+    'harga_detilsp2d' => 1065000
+]);
+// 7
+detilsp2d::create([
+    'detil_id' => 130,
+    'sp2d_id' => 2,
+    'harga_detilsp2d' => 869040
+]);
+// 8
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 1,
+    'harga_detilsp2d' => 61039600
+]);
+// 9
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 1,
+    'harga_detilsp2d' => 972
+]);
+// 10
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 1,
+    'harga_detilsp2d' => 4782060
+]);
+// 11
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 1,
+    'harga_detilsp2d' => 1545138
+]);
+// 12
+detilsp2d::create([
+    'detil_id' => 122,
+    'sp2d_id' => 1,
+    'harga_detilsp2d' => 360000
+]);
+// 13
+detilsp2d::create([
+    'detil_id' => 125,
+    'sp2d_id' => 1,
+    'harga_detilsp2d' => 4370000
+]);
+// 14
+detilsp2d::create([
+    'detil_id' => 130,
+    'sp2d_id' => 1,
+    'harga_detilsp2d' => 4200360
+]);
+// 15
+detilsp2d::create([
+    'detil_id' => 132,
+    'sp2d_id' => 1,
+    'harga_detilsp2d' => 915000
+]);
+// 16
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 36,
+    'harga_detilsp2d' => 750000
+]);
+// 17
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 35,
+    'harga_detilsp2d' => 750000
+]);
+// 18
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 34,
+    'harga_detilsp2d' => 750000
+]);
+// 19
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 33,
+    'harga_detilsp2d' => 1000000
+]);
+// 20
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 32,
+    'harga_detilsp2d' => 750000
+]);
+// 21
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 31,
+    'harga_detilsp2d' => 1000000
+]);
+// 22
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 30,
+    'harga_detilsp2d' => 1000000
+]);
+// 23
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 29,
+    'harga_detilsp2d' => 1000000
+]);
+// 24
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 28,
+    'harga_detilsp2d' => 1000000
+]);
+// 25
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 27,
+    'harga_detilsp2d' => 1750000
+]);
+// 26
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 26,
+    'harga_detilsp2d' => 1500000
+]);
+// 27
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 25,
+    'harga_detilsp2d' => 1250000
+]);
+// 28
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 24,
+    'harga_detilsp2d' => 1500000
+]);
+// 29
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 23,
+    'harga_detilsp2d' => 1250000
+]);
+// 30
+detilsp2d::create([
+    'detil_id' => 8,
+    'sp2d_id' => 22,
+    'harga_detilsp2d' => 2100000
+]);
+// 31
+detilsp2d::create([
+    'detil_id' => 203,
+    'sp2d_id' => 21,
+    'harga_detilsp2d' => 500000
+]);
+// 32
+detilsp2d::create([
+    'detil_id' => 109,
+    'sp2d_id' => 20,
+    'harga_detilsp2d' => 500000
+]);
+// 33
+detilsp2d::create([
+    'detil_id' => 92,
+    'sp2d_id' => 19,
+    'harga_detilsp2d' => 1000000
+]);
+// 34
+detilsp2d::create([
+    'detil_id' => 109,
+    'sp2d_id' => 18,
+    'harga_detilsp2d' => 1500000
+]);
+// 35
+detilsp2d::create([
+    'detil_id' => 225,
+    'sp2d_id' => 17,
+    'harga_detilsp2d' => 3406000
+]);
+// 36
+detilsp2d::create([
+    'detil_id' => 214,
+    'sp2d_id' => 16,
+    'harga_detilsp2d' => 7397000
+]);
+// 37
+detilsp2d::create([
+    'detil_id' => 141,
+    'sp2d_id' => 14,
+    'harga_detilsp2d' => 101841350
+]);
+// 38
+detilsp2d::create([
+    'detil_id' => 131,
+    'sp2d_id' => 13,
+    'harga_detilsp2d' => 13962000
+]);
+// 39
+detilsp2d::create([
+    'detil_id' => 167,
+    'sp2d_id' => 12,
+    'harga_detilsp2d' => 3170500
+]);
+// 40
+detilsp2d::create([
+    'detil_id' => 166,
+    'sp2d_id' => 12,
+    'harga_detilsp2d' => 1673000
+]);
+// 41
+detilsp2d::create([
+    'detil_id' => 103,
+    'sp2d_id' => 12,
+    'harga_detilsp2d' => 36000
+]);
+// 42
+detilsp2d::create([
+    'detil_id' => 177,
+    'sp2d_id' => 12,
+    'harga_detilsp2d' => 7696600
+]);
+// 43
+detilsp2d::create([
+    'detil_id' => 104,
+    'sp2d_id' => 12,
+    'harga_detilsp2d' => 3386000
+]);
+// 44
+detilsp2d::create([
+    'detil_id' => 142,
+    'sp2d_id' => 12,
+    'harga_detilsp2d' => 9069100
+]);
+// 45
+detilsp2d::create([
+    'detil_id' => 143,
+    'sp2d_id' => 12,
+    'harga_detilsp2d' => 132500
+]);
+// 46
+detilsp2d::create([
+    'detil_id' => 182,
+    'sp2d_id' => 12,
+    'harga_detilsp2d' => 30000000
+]);
+// 47
+detilsp2d::create([
+    'detil_id' => 146,
+    'sp2d_id' => 12,
+    'harga_detilsp2d' => 572000
+]);
+// 48
+detilsp2d::create([
+    'detil_id' => 159,
+    'sp2d_id' => 12,
+    'harga_detilsp2d' => 860000
+]);
+// 49
+detilsp2d::create([
+    'detil_id' => 148,
+    'sp2d_id' => 12,
+    'harga_detilsp2d' => 1550000
+]);
+// 50
+detilsp2d::create([
+    'detil_id' => 160,
+    'sp2d_id' => 12,
+    'harga_detilsp2d' => 500000
+]);
+// 51
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 11,
+    'harga_detilsp2d' => 279700
+]);
+// 52
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 11,
+    'harga_detilsp2d' => 172
+]);
+// 53
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 11,
+    'harga_detilsp2d' => 27970
+]);
+// 54
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 11,
+    'harga_detilsp2d' => 10624
+]);
+// 55
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 10,
+    'harga_detilsp2d' => 1085100
+]);
+// 56
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 10,
+    'harga_detilsp2d' => 231
+]);
+// 57
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 10,
+    'harga_detilsp2d' => 108510
+]);
+// 58
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 10,
+    'harga_detilsp2d' => 36792
+]);
+// 59
+detilsp2d::create([
+    'detil_id' => 171,
+    'sp2d_id' => 9,
+    'harga_detilsp2d' => 5200000
+]);
+// 60
+detilsp2d::create([
+    'detil_id' => 169,
+    'sp2d_id' => 8,
+    'harga_detilsp2d' => 3000000
+]);
+// 61
+detilsp2d::create([
+    'detil_id' => 170,
+    'sp2d_id' => 8,
+    'harga_detilsp2d' => 8700000
+]);
+// 62
+detilsp2d::create([
+    'detil_id' => 168,
+    'sp2d_id' => 8,
+    'harga_detilsp2d' => 9900000
+]);
+// 63
+detilsp2d::create([
+    'detil_id' => 173,
+    'sp2d_id' => 8,
+    'harga_detilsp2d' => 3300000
+]);
+// 64
+detilsp2d::create([
+    'detil_id' => 131,
+    'sp2d_id' => 6,
+    'harga_detilsp2d' => 8438000
+]);
+// 65
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 4,
+    'harga_detilsp2d' => 61039600
+]);
+// 66
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 4,
+    'harga_detilsp2d' => 988
+]);
+// 67
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 4,
+    'harga_detilsp2d' => 4782060
+]);
+// 68
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 4,
+    'harga_detilsp2d' => 1462750
+]);
+// 69
+detilsp2d::create([
+    'detil_id' => 122,
+    'sp2d_id' => 4,
+    'harga_detilsp2d' => 900000
+]);
+// 70
+detilsp2d::create([
+    'detil_id' => 125,
+    'sp2d_id' => 4,
+    'harga_detilsp2d' => 4370000
+]);
+// 71
+detilsp2d::create([
+    'detil_id' => 127,
+    'sp2d_id' => 4,
+    'harga_detilsp2d' => 5741
+]);
+// 72
+detilsp2d::create([
+    'detil_id' => 130,
+    'sp2d_id' => 4,
+    'harga_detilsp2d' => 4127940
+]);
+// 73
+detilsp2d::create([
+    'detil_id' => 132,
+    'sp2d_id' => 4,
+    'harga_detilsp2d' => 730000
+]);
+// 74
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 3,
+    'harga_detilsp2d' => 13427200
+]);
+// 75
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 3,
+    'harga_detilsp2d' => 226
+]);
+// 76
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 3,
+    'harga_detilsp2d' => 994560
+]);
+// 77
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 3,
+    'harga_detilsp2d' => 325246
+]);
+// 78
+detilsp2d::create([
+    'detil_id' => 125,
+    'sp2d_id' => 3,
+    'harga_detilsp2d' => 1340000
+]);
+// 79
+detilsp2d::create([
+    'detil_id' => 130,
+    'sp2d_id' => 3,
+    'harga_detilsp2d' => 869040
+]);
+// 80
+detilsp2d::create([
+    'detil_id' => 108,
+    'sp2d_id' => 89,
+    'harga_detilsp2d' => 252362
+]);
+// 81
+detilsp2d::create([
+    'detil_id' => 29,
+    'sp2d_id' => 88,
+    'harga_detilsp2d' => 1210000
+]);
+// 82
+detilsp2d::create([
+    'detil_id' => 230,
+    'sp2d_id' => 87,
+    'harga_detilsp2d' => 1680000
+]);
+// 83
+detilsp2d::create([
+    'detil_id' => 30,
+    'sp2d_id' => 86,
+    'harga_detilsp2d' => 2960000
+]);
+// 84
+detilsp2d::create([
+    'detil_id' => 82,
+    'sp2d_id' => 85,
+    'harga_detilsp2d' => 4450000
+]);
+// 85
+detilsp2d::create([
+    'detil_id' => 214,
+    'sp2d_id' => 84,
+    'harga_detilsp2d' => 4162000
+]);
+// 86
+detilsp2d::create([
+    'detil_id' => 82,
+    'sp2d_id' => 83,
+    'harga_detilsp2d' => 7911600
+]);
+// 87
+detilsp2d::create([
+    'detil_id' => 169,
+    'sp2d_id' => 82,
+    'harga_detilsp2d' => 3300000
+]);
+// 88
+detilsp2d::create([
+    'detil_id' => 170,
+    'sp2d_id' => 82,
+    'harga_detilsp2d' => 9600000
+]);
+// 89
+detilsp2d::create([
+    'detil_id' => 168,
+    'sp2d_id' => 82,
+    'harga_detilsp2d' => 7200000
+]);
+// 90
+detilsp2d::create([
+    'detil_id' => 171,
+    'sp2d_id' => 82,
+    'harga_detilsp2d' => 5800000
+]);
+// 91
+detilsp2d::create([
+    'detil_id' => 173,
+    'sp2d_id' => 82,
+    'harga_detilsp2d' => 3600000
+]);
+// 92
+detilsp2d::create([
+    'detil_id' => 214,
+    'sp2d_id' => 81,
+    'harga_detilsp2d' => 2220000
+]);
+// 93
+detilsp2d::create([
+    'detil_id' => 46,
+    'sp2d_id' => 80,
+    'harga_detilsp2d' => 740000
+]);
+// 94
+detilsp2d::create([
+    'detil_id' => 24,
+    'sp2d_id' => 79,
+    'harga_detilsp2d' => 1195000
+]);
+// 95
+detilsp2d::create([
+    'detil_id' => 24,
+    'sp2d_id' => 78,
+    'harga_detilsp2d' => 6653000
+]);
+// 96
+detilsp2d::create([
+    'detil_id' => 24,
+    'sp2d_id' => 77,
+    'harga_detilsp2d' => 2720000
+]);
+// 97
+detilsp2d::create([
+    'detil_id' => 8,
+    'sp2d_id' => 76,
+    'harga_detilsp2d' => 700000
+]);
+// 98
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 75,
+    'harga_detilsp2d' => 750000
+]);
+// 99
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 74,
+    'harga_detilsp2d' => 750000
+]);
+// 100
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 73,
+    'harga_detilsp2d' => 750000
+]);
+// 101
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 72,
+    'harga_detilsp2d' => 750000
+]);
+// 102
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 71,
+    'harga_detilsp2d' => 740000
+]);
+// 103
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 70,
+    'harga_detilsp2d' => 740000
+]);
+// 104
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 69,
+    'harga_detilsp2d' => 740000
+]);
+// 105
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 68,
+    'harga_detilsp2d' => 1110000
+]);
+// 106
+detilsp2d::create([
+    'detil_id' => 108,
+    'sp2d_id' => 66,
+    'harga_detilsp2d' => 1512312
+]);
+// 107
+detilsp2d::create([
+    'detil_id' => 141,
+    'sp2d_id' => 65,
+    'harga_detilsp2d' => 100035299
+]);
+// 108
+detilsp2d::create([
+    'detil_id' => 131,
+    'sp2d_id' => 64,
+    'harga_detilsp2d' => 12949000
+]);
+// 109
+detilsp2d::create([
+    'detil_id' => 189,
+    'sp2d_id' => 63,
+    'harga_detilsp2d' => 640000
+]);
+// 110
+detilsp2d::create([
+    'detil_id' => 193,
+    'sp2d_id' => 62,
+    'harga_detilsp2d' => 1290000
+]);
+// 111
+detilsp2d::create([
+    'detil_id' => 195,
+    'sp2d_id' => 62,
+    'harga_detilsp2d' => 300000
+]);
+// 112
+detilsp2d::create([
+    'detil_id' => 196,
+    'sp2d_id' => 62,
+    'harga_detilsp2d' => 100000
+]);
+// 113
+detilsp2d::create([
+    'detil_id' => 197,
+    'sp2d_id' => 62,
+    'harga_detilsp2d' => 260000
+]);
+// 114
+detilsp2d::create([
+    'detil_id' => 199,
+    'sp2d_id' => 62,
+    'harga_detilsp2d' => 600000
+]);
+// 115
+detilsp2d::create([
+    'detil_id' => 186,
+    'sp2d_id' => 62,
+    'harga_detilsp2d' => 2590000
+]);
+// 116
+detilsp2d::create([
+    'detil_id' => 187,
+    'sp2d_id' => 62,
+    'harga_detilsp2d' => 396000
+]);
+// 117
+detilsp2d::create([
+    'detil_id' => 188,
+    'sp2d_id' => 62,
+    'harga_detilsp2d' => 344000
+]);
+// 118
+detilsp2d::create([
+    'detil_id' => 189,
+    'sp2d_id' => 62,
+    'harga_detilsp2d' => 3200000
+]);
+// 119
+detilsp2d::create([
+    'detil_id' => 191,
+    'sp2d_id' => 62,
+    'harga_detilsp2d' => 890000
+]);
+// 120
+detilsp2d::create([
+    'detil_id' => 192,
+    'sp2d_id' => 62,
+    'harga_detilsp2d' => 570000
+]);
+// 121
+detilsp2d::create([
+    'detil_id' => 201,
+    'sp2d_id' => 62,
+    'harga_detilsp2d' => 680000
+]);
+// 122
+detilsp2d::create([
+    'detil_id' => 22,
+    'sp2d_id' => 61,
+    'harga_detilsp2d' => 183000
+]);
+// 123
+detilsp2d::create([
+    'detil_id' => 6,
+    'sp2d_id' => 60,
+    'harga_detilsp2d' => 460000
+]);
+// 124
+detilsp2d::create([
+    'detil_id' => 212,
+    'sp2d_id' => 59,
+    'harga_detilsp2d' => 1960000
+]);
+// 125
+detilsp2d::create([
+    'detil_id' => 202,
+    'sp2d_id' => 59,
+    'harga_detilsp2d' => 460000
+]);
+// 126
+detilsp2d::create([
+    'detil_id' => 85,
+    'sp2d_id' => 58,
+    'harga_detilsp2d' => 16100000
+]);
+// 127
+detilsp2d::create([
+    'detil_id' => 95,
+    'sp2d_id' => 58,
+    'harga_detilsp2d' => 176000
+]);
+// 128
+detilsp2d::create([
+    'detil_id' => 99,
+    'sp2d_id' => 58,
+    'harga_detilsp2d' => 1500000
+]);
+// 129
+detilsp2d::create([
+    'detil_id' => 231,
+    'sp2d_id' => 57,
+    'harga_detilsp2d' => 199000
+]);
+// 130
+detilsp2d::create([
+    'detil_id' => 221,
+    'sp2d_id' => 57,
+    'harga_detilsp2d' => 519000
+]);
+// 131
+detilsp2d::create([
+    'detil_id' => 223,
+    'sp2d_id' => 57,
+    'harga_detilsp2d' => 979000
+]);
+// 132
+detilsp2d::create([
+    'detil_id' => 218,
+    'sp2d_id' => 57,
+    'harga_detilsp2d' => 47000
+]);
+// 133
+detilsp2d::create([
+    'detil_id' => 227,
+    'sp2d_id' => 57,
+    'harga_detilsp2d' => 300000
+]);
+// 134
+detilsp2d::create([
+    'detil_id' => 106,
+    'sp2d_id' => 57,
+    'harga_detilsp2d' => 2275000
+]);
+// 135
+detilsp2d::create([
+    'detil_id' => 107,
+    'sp2d_id' => 57,
+    'harga_detilsp2d' => 4115500
+]);
+// 136
+detilsp2d::create([
+    'detil_id' => 206,
+    'sp2d_id' => 56,
+    'harga_detilsp2d' => 6750000
+]);
+// 137
+detilsp2d::create([
+    'detil_id' => 166,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 2555500
+]);
+// 138
+detilsp2d::create([
+    'detil_id' => 167,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 5205000
+]);
+// 139
+detilsp2d::create([
+    'detil_id' => 165,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 5981200
+]);
+// 140
+detilsp2d::create([
+    'detil_id' => 174,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 115100
+]);
+// 141
+detilsp2d::create([
+    'detil_id' => 177,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 4304800
+]);
+// 142
+detilsp2d::create([
+    'detil_id' => 142,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 8603500
+]);
+// 143
+detilsp2d::create([
+    'detil_id' => 143,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 335500
+]);
+// 144
+detilsp2d::create([
+    'detil_id' => 144,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 7320000
+]);
+// 145
+detilsp2d::create([
+    'detil_id' => 162,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 3562000
+]);
+// 146
+detilsp2d::create([
+    'detil_id' => 146,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 1253800
+]);
+// 147
+detilsp2d::create([
+    'detil_id' => 148,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 5224400
+]);
+// 148
+detilsp2d::create([
+    'detil_id' => 159,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 250000
+]);
+// 149
+detilsp2d::create([
+    'detil_id' => 161,
+    'sp2d_id' => 55,
+    'harga_detilsp2d' => 100000
+]);
+// 150
+detilsp2d::create([
+    'detil_id' => 214,
+    'sp2d_id' => 54,
+    'harga_detilsp2d' => 3553500
+]);
+// 151
+detilsp2d::create([
+    'detil_id' => 109,
+    'sp2d_id' => 53,
+    'harga_detilsp2d' => 500000
+]);
+// 152
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 52,
+    'harga_detilsp2d' => 500000
+]);
+// 153
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 51,
+    'harga_detilsp2d' => 750000
+]);
+// 154
+detilsp2d::create([
+    'detil_id' => 3,
+    'sp2d_id' => 50,
+    'harga_detilsp2d' => 700000
+]);
+// 155
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 49,
+    'harga_detilsp2d' => 1100000
+]);
+// 156
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 48,
+    'harga_detilsp2d' => 600000
+]);
+// 157
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 47,
+    'harga_detilsp2d' => 720000
+]);
+// 158
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 46,
+    'harga_detilsp2d' => 1110000
+]);
+// 159
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 45,
+    'harga_detilsp2d' => 740000
+]);
+// 160
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 44,
+    'harga_detilsp2d' => 1110000
+]);
+// 161
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 43,
+    'harga_detilsp2d' => 600000
+]);
+// 162
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 42,
+    'harga_detilsp2d' => 720000
+]);
+// 163
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 41,
+    'harga_detilsp2d' => 840000
+]);
+// 164
+detilsp2d::create([
+    'detil_id' => 189,
+    'sp2d_id' => 40,
+    'harga_detilsp2d' => 640000
+]);
+// 165
+detilsp2d::create([
+    'detil_id' => 193,
+    'sp2d_id' => 39,
+    'harga_detilsp2d' => 1290000
+]);
+// 166
+detilsp2d::create([
+    'detil_id' => 195,
+    'sp2d_id' => 39,
+    'harga_detilsp2d' => 300000
+]);
+// 167
+detilsp2d::create([
+    'detil_id' => 196,
+    'sp2d_id' => 39,
+    'harga_detilsp2d' => 100000
+]);
+// 168
+detilsp2d::create([
+    'detil_id' => 197,
+    'sp2d_id' => 39,
+    'harga_detilsp2d' => 260000
+]);
+// 169
+detilsp2d::create([
+    'detil_id' => 199,
+    'sp2d_id' => 39,
+    'harga_detilsp2d' => 600000
+]);
+// 170
+detilsp2d::create([
+    'detil_id' => 186,
+    'sp2d_id' => 39,
+    'harga_detilsp2d' => 2590000
+]);
+// 171
+detilsp2d::create([
+    'detil_id' => 187,
+    'sp2d_id' => 39,
+    'harga_detilsp2d' => 396000
+]);
+// 172
+detilsp2d::create([
+    'detil_id' => 188,
+    'sp2d_id' => 39,
+    'harga_detilsp2d' => 344000
+]);
+// 173
+detilsp2d::create([
+    'detil_id' => 189,
+    'sp2d_id' => 39,
+    'harga_detilsp2d' => 3200000
+]);
+// 174
+detilsp2d::create([
+    'detil_id' => 191,
+    'sp2d_id' => 39,
+    'harga_detilsp2d' => 890000
+]);
+// 175
+detilsp2d::create([
+    'detil_id' => 192,
+    'sp2d_id' => 39,
+    'harga_detilsp2d' => 570000
+]);
+// 176
+detilsp2d::create([
+    'detil_id' => 201,
+    'sp2d_id' => 39,
+    'harga_detilsp2d' => 680000
+]);
+// 177
+detilsp2d::create([
+    'detil_id' => 181,
+    'sp2d_id' => 38,
+    'harga_detilsp2d' => 16000000
+]);
+// 178
+detilsp2d::create([
+    'detil_id' => 169,
+    'sp2d_id' => 37,
+    'harga_detilsp2d' => 3000000
+]);
+// 179
+detilsp2d::create([
+    'detil_id' => 170,
+    'sp2d_id' => 37,
+    'harga_detilsp2d' => 8700000
+]);
+// 180
+detilsp2d::create([
+    'detil_id' => 168,
+    'sp2d_id' => 37,
+    'harga_detilsp2d' => 9900000
+]);
+// 181
+detilsp2d::create([
+    'detil_id' => 171,
+    'sp2d_id' => 37,
+    'harga_detilsp2d' => 5200000
+]);
+// 182
+detilsp2d::create([
+    'detil_id' => 173,
+    'sp2d_id' => 37,
+    'harga_detilsp2d' => 3300000
+]);
+// 183
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 15,
+    'harga_detilsp2d' => 74604500
+]);
+// 184
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 15,
+    'harga_detilsp2d' => 1243
+]);
+// 185
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 15,
+    'harga_detilsp2d' => 5790390
+]);
+// 186
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 15,
+    'harga_detilsp2d' => 1787996
+]);
+// 187
+detilsp2d::create([
+    'detil_id' => 122,
+    'sp2d_id' => 15,
+    'harga_detilsp2d' => 900000
+]);
+// 188
+detilsp2d::create([
+    'detil_id' => 125,
+    'sp2d_id' => 15,
+    'harga_detilsp2d' => 5710000
+]);
+// 189
+detilsp2d::create([
+    'detil_id' => 127,
+    'sp2d_id' => 15,
+    'harga_detilsp2d' => 12575
+]);
+// 190
+detilsp2d::create([
+    'detil_id' => 130,
+    'sp2d_id' => 15,
+    'harga_detilsp2d' => 4996980
+]);
+// 191
+detilsp2d::create([
+    'detil_id' => 132,
+    'sp2d_id' => 15,
+    'harga_detilsp2d' => 730000
+]);
+// 192
+detilsp2d::create([
+    'detil_id' => 74,
+    'sp2d_id' => 130,
+    'harga_detilsp2d' => 506000
+]);
+// 193
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 129,
+    'harga_detilsp2d' => 2750000
+]);
+// 194
+detilsp2d::create([
+    'detil_id' => 9,
+    'sp2d_id' => 129,
+    'harga_detilsp2d' => 1400000
+]);
+// 195
+detilsp2d::create([
+    'detil_id' => 45,
+    'sp2d_id' => 128,
+    'harga_detilsp2d' => 800000
+]);
+// 196
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 128,
+    'harga_detilsp2d' => 1850000
+]);
+// 197
+detilsp2d::create([
+    'detil_id' => 21,
+    'sp2d_id' => 128,
+    'harga_detilsp2d' => 1402500
+]);
+// 198
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 128,
+    'harga_detilsp2d' => 740000
+]);
+// 199
+detilsp2d::create([
+    'detil_id' => 25,
+    'sp2d_id' => 128,
+    'harga_detilsp2d' => 982000
+]);
+// 200
+detilsp2d::create([
+    'detil_id' => 217,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 336000
+]);
+// 201
+detilsp2d::create([
+    'detil_id' => 218,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 716500
+]);
+// 202
+detilsp2d::create([
+    'detil_id' => 231,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 25000
+]);
+// 203
+detilsp2d::create([
+    'detil_id' => 216,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 160000
+]);
+// 204
+detilsp2d::create([
+    'detil_id' => 226,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 1933000
+]);
+// 205
+detilsp2d::create([
+    'detil_id' => 232,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 1833000
+]);
+// 206
+detilsp2d::create([
+    'detil_id' => 149,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 3520000
+]);
+// 207
+detilsp2d::create([
+    'detil_id' => 150,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 455000
+]);
+// 208
+detilsp2d::create([
+    'detil_id' => 151,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 640000
+]);
+// 209
+detilsp2d::create([
+    'detil_id' => 153,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 2331000
+]);
+// 210
+detilsp2d::create([
+    'detil_id' => 154,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 2997000
+]);
+// 211
+detilsp2d::create([
+    'detil_id' => 155,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 499500
+]);
+// 212
+detilsp2d::create([
+    'detil_id' => 106,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 1767500
+]);
+// 213
+detilsp2d::create([
+    'detil_id' => 211,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 1535000
+]);
+// 214
+detilsp2d::create([
+    'detil_id' => 209,
+    'sp2d_id' => 127,
+    'harga_detilsp2d' => 3650200
+]);
+// 215
+detilsp2d::create([
+    'detil_id' => 166,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 2199000
+]);
+// 216
+detilsp2d::create([
+    'detil_id' => 167,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 2360000
+]);
+// 217
+detilsp2d::create([
+    'detil_id' => 165,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 6243700
+]);
+// 218
+detilsp2d::create([
+    'detil_id' => 147,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 888500
+]);
+// 219
+detilsp2d::create([
+    'detil_id' => 177,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 3384500
+]);
+// 220
+detilsp2d::create([
+    'detil_id' => 142,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 9305300
+]);
+// 221
+detilsp2d::create([
+    'detil_id' => 143,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 628200
+]);
+// 222
+detilsp2d::create([
+    'detil_id' => 144,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 3540000
+]);
+// 223
+detilsp2d::create([
+    'detil_id' => 183,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 830000
+]);
+// 224
+detilsp2d::create([
+    'detil_id' => 164,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 1880000
+]);
+// 225
+detilsp2d::create([
+    'detil_id' => 162,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 10226000
+]);
+// 226
+detilsp2d::create([
+    'detil_id' => 146,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 1827200
+]);
+// 227
+detilsp2d::create([
+    'detil_id' => 148,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 6749100
+]);
+// 228
+detilsp2d::create([
+    'detil_id' => 159,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 7770000
+]);
+// 229
+detilsp2d::create([
+    'detil_id' => 161,
+    'sp2d_id' => 125,
+    'harga_detilsp2d' => 1950000
+]);
+// 230
+detilsp2d::create([
+    'detil_id' => 210,
+    'sp2d_id' => 124,
+    'harga_detilsp2d' => 3488600
+]);
+// 231
+detilsp2d::create([
+    'detil_id' => 30,
+    'sp2d_id' => 123,
+    'harga_detilsp2d' => 1025000
+]);
+// 232
+detilsp2d::create([
+    'detil_id' => 141,
+    'sp2d_id' => 122,
+    'harga_detilsp2d' => 50762494
+]);
+// 233
+detilsp2d::create([
+    'detil_id' => 169,
+    'sp2d_id' => 121,
+    'harga_detilsp2d' => 3300000
+]);
+// 234
+detilsp2d::create([
+    'detil_id' => 170,
+    'sp2d_id' => 121,
+    'harga_detilsp2d' => 9600000
+]);
+// 235
+detilsp2d::create([
+    'detil_id' => 168,
+    'sp2d_id' => 121,
+    'harga_detilsp2d' => 7200000
+]);
+// 236
+detilsp2d::create([
+    'detil_id' => 171,
+    'sp2d_id' => 121,
+    'harga_detilsp2d' => 5800000
+]);
+// 237
+detilsp2d::create([
+    'detil_id' => 173,
+    'sp2d_id' => 121,
+    'harga_detilsp2d' => 3600000
+]);
+// 238
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 120,
+    'harga_detilsp2d' => 74711900
+]);
+// 239
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 120,
+    'harga_detilsp2d' => 1386
+]);
+// 240
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 120,
+    'harga_detilsp2d' => 5790390
+]);
+// 241
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 120,
+    'harga_detilsp2d' => 1790144
+]);
+// 242
+detilsp2d::create([
+    'detil_id' => 122,
+    'sp2d_id' => 120,
+    'harga_detilsp2d' => 900000
+]);
+// 243
+detilsp2d::create([
+    'detil_id' => 125,
+    'sp2d_id' => 120,
+    'harga_detilsp2d' => 5710000
+]);
+// 244
+detilsp2d::create([
+    'detil_id' => 127,
+    'sp2d_id' => 120,
+    'harga_detilsp2d' => 343200
+]);
+// 245
+detilsp2d::create([
+    'detil_id' => 130,
+    'sp2d_id' => 120,
+    'harga_detilsp2d' => 4996980
+]);
+// 246
+detilsp2d::create([
+    'detil_id' => 132,
+    'sp2d_id' => 120,
+    'harga_detilsp2d' => 730000
+]);
+// 247
+detilsp2d::create([
+    'detil_id' => 75,
+    'sp2d_id' => 119,
+    'harga_detilsp2d' => 3249000
+]);
+// 248
+detilsp2d::create([
+    'detil_id' => 82,
+    'sp2d_id' => 118,
+    'harga_detilsp2d' => 1110000
+]);
+// 249
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 117,
+    'harga_detilsp2d' => 500000
+]);
+// 250
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 116,
+    'harga_detilsp2d' => 750000
+]);
+// 251
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 115,
+    'harga_detilsp2d' => 750000
+]);
+// 252
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 114,
+    'harga_detilsp2d' => 750000
+]);
+// 253
+detilsp2d::create([
+    'detil_id' => 8,
+    'sp2d_id' => 113,
+    'harga_detilsp2d' => 700000
+]);
+// 254
+detilsp2d::create([
+    'detil_id' => 8,
+    'sp2d_id' => 113,
+    'harga_detilsp2d' => 700000
+]);
+// 255
+detilsp2d::create([
+    'detil_id' => 5,
+    'sp2d_id' => 112,
+    'harga_detilsp2d' => 1275000
+]);
+// 256
+detilsp2d::create([
+    'detil_id' => 2,
+    'sp2d_id' => 111,
+    'harga_detilsp2d' => 600000
+]);
+// 257
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 110,
+    'harga_detilsp2d' => 1110000
+]);
+// 258
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 109,
+    'harga_detilsp2d' => 1480000
+]);
+// 259
+detilsp2d::create([
+    'detil_id' => 29,
+    'sp2d_id' => 108,
+    'harga_detilsp2d' => 2465000
+]);
+// 260
+detilsp2d::create([
+    'detil_id' => 24,
+    'sp2d_id' => 107,
+    'harga_detilsp2d' => 1645000
+]);
+// 261
+detilsp2d::create([
+    'detil_id' => 209,
+    'sp2d_id' => 106,
+    'harga_detilsp2d' => 3599000
+]);
+// 262
+detilsp2d::create([
+    'detil_id' => 101,
+    'sp2d_id' => 105,
+    'harga_detilsp2d' => 740000
+]);
+// 263
+detilsp2d::create([
+    'detil_id' => 141,
+    'sp2d_id' => 103,
+    'harga_detilsp2d' => 101760344
+]);
+// 264
+detilsp2d::create([
+    'detil_id' => 158,
+    'sp2d_id' => 102,
+    'harga_detilsp2d' => 4510000
+]);
+// 265
+detilsp2d::create([
+    'detil_id' => 189,
+    'sp2d_id' => 101,
+    'harga_detilsp2d' => 640000
+]);
+// 266
+detilsp2d::create([
+    'detil_id' => 193,
+    'sp2d_id' => 100,
+    'harga_detilsp2d' => 1290000
+]);
+// 267
+detilsp2d::create([
+    'detil_id' => 195,
+    'sp2d_id' => 100,
+    'harga_detilsp2d' => 300000
+]);
+// 268
+detilsp2d::create([
+    'detil_id' => 196,
+    'sp2d_id' => 100,
+    'harga_detilsp2d' => 100000
+]);
+// 269
+detilsp2d::create([
+    'detil_id' => 197,
+    'sp2d_id' => 100,
+    'harga_detilsp2d' => 260000
+]);
+// 270
+detilsp2d::create([
+    'detil_id' => 199,
+    'sp2d_id' => 100,
+    'harga_detilsp2d' => 600000
+]);
+// 271
+detilsp2d::create([
+    'detil_id' => 186,
+    'sp2d_id' => 100,
+    'harga_detilsp2d' => 2590000
+]);
+// 272
+detilsp2d::create([
+    'detil_id' => 187,
+    'sp2d_id' => 100,
+    'harga_detilsp2d' => 396000
+]);
+// 273
+detilsp2d::create([
+    'detil_id' => 188,
+    'sp2d_id' => 100,
+    'harga_detilsp2d' => 344000
+]);
+// 274
+detilsp2d::create([
+    'detil_id' => 189,
+    'sp2d_id' => 100,
+    'harga_detilsp2d' => 3200000
+]);
+// 275
+detilsp2d::create([
+    'detil_id' => 191,
+    'sp2d_id' => 100,
+    'harga_detilsp2d' => 890000
+]);
+// 276
+detilsp2d::create([
+    'detil_id' => 192,
+    'sp2d_id' => 100,
+    'harga_detilsp2d' => 570000
+]);
+// 277
+detilsp2d::create([
+    'detil_id' => 201,
+    'sp2d_id' => 100,
+    'harga_detilsp2d' => 680000
+]);
+// 278
+detilsp2d::create([
+    'detil_id' => 131,
+    'sp2d_id' => 99,
+    'harga_detilsp2d' => 13709000
+]);
+// 279
+detilsp2d::create([
+    'detil_id' => 28,
+    'sp2d_id' => 98,
+    'harga_detilsp2d' => 859500
+]);
+// 280
+detilsp2d::create([
+    'detil_id' => 22,
+    'sp2d_id' => 98,
+    'harga_detilsp2d' => 1003000
+]);
+// 281
+detilsp2d::create([
+    'detil_id' => 27,
+    'sp2d_id' => 98,
+    'harga_detilsp2d' => 1550000
+]);
+// 282
+detilsp2d::create([
+    'detil_id' => 23,
+    'sp2d_id' => 98,
+    'harga_detilsp2d' => 850000
+]);
+// 283
+detilsp2d::create([
+    'detil_id' => 37,
+    'sp2d_id' => 97,
+    'harga_detilsp2d' => 1200000
+]);
+// 284
+detilsp2d::create([
+    'detil_id' => 83,
+    'sp2d_id' => 96,
+    'harga_detilsp2d' => 896500
+]);
+// 285
+detilsp2d::create([
+    'detil_id' => 84,
+    'sp2d_id' => 96,
+    'harga_detilsp2d' => 6000000
+]);
+// 286
+detilsp2d::create([
+    'detil_id' => 152,
+    'sp2d_id' => 95,
+    'harga_detilsp2d' => 15318000
+]);
+// 287
+detilsp2d::create([
+    'detil_id' => 106,
+    'sp2d_id' => 95,
+    'harga_detilsp2d' => 1500000
+]);
+// 288
+detilsp2d::create([
+    'detil_id' => 107,
+    'sp2d_id' => 95,
+    'harga_detilsp2d' => 4536000
+]);
+// 289
+detilsp2d::create([
+    'detil_id' => 202,
+    'sp2d_id' => 94,
+    'harga_detilsp2d' => 2335000
+]);
+// 290
+detilsp2d::create([
+    'detil_id' => 224,
+    'sp2d_id' => 93,
+    'harga_detilsp2d' => 976000
+]);
+// 291
+detilsp2d::create([
+    'detil_id' => 220,
+    'sp2d_id' => 93,
+    'harga_detilsp2d' => 246000
+]);
+// 292
+detilsp2d::create([
+    'detil_id' => 229,
+    'sp2d_id' => 93,
+    'harga_detilsp2d' => 1993000
+]);
+// 293
+detilsp2d::create([
+    'detil_id' => 232,
+    'sp2d_id' => 93,
+    'harga_detilsp2d' => 1321500
+]);
+// 294
+detilsp2d::create([
+    'detil_id' => 227,
+    'sp2d_id' => 93,
+    'harga_detilsp2d' => 300000
+]);
+// 295
+detilsp2d::create([
+    'detil_id' => 158,
+    'sp2d_id' => 92,
+    'harga_detilsp2d' => 11495000
+]);
+// 296
+detilsp2d::create([
+    'detil_id' => 204,
+    'sp2d_id' => 91,
+    'harga_detilsp2d' => 1400000
+]);
+// 297
+detilsp2d::create([
+    'detil_id' => 205,
+    'sp2d_id' => 91,
+    'harga_detilsp2d' => 5000000
+]);
+// 298
+detilsp2d::create([
+    'detil_id' => 207,
+    'sp2d_id' => 91,
+    'harga_detilsp2d' => 13250000
+]);
+// 299
+detilsp2d::create([
+    'detil_id' => 166,
+    'sp2d_id' => 90,
+    'harga_detilsp2d' => 8440500
+]);
+// 300
+detilsp2d::create([
+    'detil_id' => 167,
+    'sp2d_id' => 90,
+    'harga_detilsp2d' => 6258500
+]);
+// 301
+detilsp2d::create([
+    'detil_id' => 165,
+    'sp2d_id' => 90,
+    'harga_detilsp2d' => 5115000
+]);
+// 302
+detilsp2d::create([
+    'detil_id' => 174,
+    'sp2d_id' => 90,
+    'harga_detilsp2d' => 76800
+]);
+// 303
+detilsp2d::create([
+    'detil_id' => 177,
+    'sp2d_id' => 90,
+    'harga_detilsp2d' => 3067500
+]);
+// 304
+detilsp2d::create([
+    'detil_id' => 142,
+    'sp2d_id' => 90,
+    'harga_detilsp2d' => 7914400
+]);
+// 305
+detilsp2d::create([
+    'detil_id' => 143,
+    'sp2d_id' => 90,
+    'harga_detilsp2d' => 517100
+]);
+// 306
+detilsp2d::create([
+    'detil_id' => 183,
+    'sp2d_id' => 90,
+    'harga_detilsp2d' => 425000
+]);
+// 307
+detilsp2d::create([
+    'detil_id' => 162,
+    'sp2d_id' => 90,
+    'harga_detilsp2d' => 1388500
+]);
+// 308
+detilsp2d::create([
+    'detil_id' => 146,
+    'sp2d_id' => 90,
+    'harga_detilsp2d' => 2682000
+]);
+// 309
+detilsp2d::create([
+    'detil_id' => 148,
+    'sp2d_id' => 90,
+    'harga_detilsp2d' => 4317900
+]);
+// 310
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 67,
+    'harga_detilsp2d' => 74711900
+]);
+// 311
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 67,
+    'harga_detilsp2d' => 1154
+]);
+// 312
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 67,
+    'harga_detilsp2d' => 5790390
+]);
+// 313
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 67,
+    'harga_detilsp2d' => 1790144
+]);
+// 314
+detilsp2d::create([
+    'detil_id' => 122,
+    'sp2d_id' => 67,
+    'harga_detilsp2d' => 900000
+]);
+// 315
+detilsp2d::create([
+    'detil_id' => 125,
+    'sp2d_id' => 67,
+    'harga_detilsp2d' => 5710000
+]);
+// 316
+detilsp2d::create([
+    'detil_id' => 127,
+    'sp2d_id' => 67,
+    'harga_detilsp2d' => 12575
+]);
+// 317
+detilsp2d::create([
+    'detil_id' => 130,
+    'sp2d_id' => 67,
+    'harga_detilsp2d' => 4996980
+]);
+// 318
+detilsp2d::create([
+    'detil_id' => 132,
+    'sp2d_id' => 67,
+    'harga_detilsp2d' => 730000
+]);
+// 319
+detilsp2d::create([
+    'detil_id' => 88,
+    'sp2d_id' => 147,
+    'harga_detilsp2d' => 1140000
+]);
+// 320
+detilsp2d::create([
+    'detil_id' => 89,
+    'sp2d_id' => 147,
+    'harga_detilsp2d' => 1967900
+]);
+// 321
+detilsp2d::create([
+    'detil_id' => 90,
+    'sp2d_id' => 147,
+    'harga_detilsp2d' => 700000
+]);
+// 322
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 146,
+    'harga_detilsp2d' => 740000
+]);
+// 323
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 145,
+    'harga_detilsp2d' => 740000
+]);
+// 324
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 144,
+    'harga_detilsp2d' => 750000
+]);
+// 325
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 143,
+    'harga_detilsp2d' => 750000
+]);
+// 326
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 142,
+    'harga_detilsp2d' => 500000
+]);
+// 327
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 141,
+    'harga_detilsp2d' => 500000
+]);
+// 328
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 140,
+    'harga_detilsp2d' => 740000
+]);
+// 329
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 139,
+    'harga_detilsp2d' => 740000
+]);
+// 330
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 138,
+    'harga_detilsp2d' => 1110000
+]);
+// 331
+detilsp2d::create([
+    'detil_id' => 33,
+    'sp2d_id' => 137,
+    'harga_detilsp2d' => 1850000
+]);
+// 332
+detilsp2d::create([
+    'detil_id' => 214,
+    'sp2d_id' => 136,
+    'harga_detilsp2d' => 4645600
+]);
+// 333
+detilsp2d::create([
+    'detil_id' => 141,
+    'sp2d_id' => 135,
+    'harga_detilsp2d' => 101477014
+]);
+// 334
+detilsp2d::create([
+    'detil_id' => 131,
+    'sp2d_id' => 134,
+    'harga_detilsp2d' => 13435000
+]);
+// 335
+detilsp2d::create([
+    'detil_id' => 189,
+    'sp2d_id' => 132,
+    'harga_detilsp2d' => 640000
+]);
+// 336
+detilsp2d::create([
+    'detil_id' => 193,
+    'sp2d_id' => 131,
+    'harga_detilsp2d' => 1290000
+]);
+// 337
+detilsp2d::create([
+    'detil_id' => 195,
+    'sp2d_id' => 131,
+    'harga_detilsp2d' => 300000
+]);
+// 338
+detilsp2d::create([
+    'detil_id' => 196,
+    'sp2d_id' => 131,
+    'harga_detilsp2d' => 100000
+]);
+// 339
+detilsp2d::create([
+    'detil_id' => 197,
+    'sp2d_id' => 131,
+    'harga_detilsp2d' => 260000
+]);
+// 340
+detilsp2d::create([
+    'detil_id' => 199,
+    'sp2d_id' => 131,
+    'harga_detilsp2d' => 600000
+]);
+// 341
+detilsp2d::create([
+    'detil_id' => 186,
+    'sp2d_id' => 131,
+    'harga_detilsp2d' => 2590000
+]);
+// 342
+detilsp2d::create([
+    'detil_id' => 187,
+    'sp2d_id' => 131,
+    'harga_detilsp2d' => 396000
+]);
+// 343
+detilsp2d::create([
+    'detil_id' => 188,
+    'sp2d_id' => 131,
+    'harga_detilsp2d' => 344000
+]);
+// 344
+detilsp2d::create([
+    'detil_id' => 189,
+    'sp2d_id' => 131,
+    'harga_detilsp2d' => 3200000
+]);
+// 345
+detilsp2d::create([
+    'detil_id' => 191,
+    'sp2d_id' => 131,
+    'harga_detilsp2d' => 890000
+]);
+// 346
+detilsp2d::create([
+    'detil_id' => 192,
+    'sp2d_id' => 131,
+    'harga_detilsp2d' => 570000
+]);
+// 347
+detilsp2d::create([
+    'detil_id' => 201,
+    'sp2d_id' => 131,
+    'harga_detilsp2d' => 680000
+]);
+// 348
+detilsp2d::create([
+    'detil_id' => 169,
+    'sp2d_id' => 126,
+    'harga_detilsp2d' => 3300000
+]);
+// 349
+detilsp2d::create([
+    'detil_id' => 170,
+    'sp2d_id' => 126,
+    'harga_detilsp2d' => 9600000
+]);
+// 350
+detilsp2d::create([
+    'detil_id' => 168,
+    'sp2d_id' => 126,
+    'harga_detilsp2d' => 10800000
+]);
+// 351
+detilsp2d::create([
+    'detil_id' => 171,
+    'sp2d_id' => 126,
+    'harga_detilsp2d' => 5800000
+]);
+// 352
+detilsp2d::create([
+    'detil_id' => 173,
+    'sp2d_id' => 126,
+    'harga_detilsp2d' => 3600000
+]);
+// 353
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 104,
+    'harga_detilsp2d' => 74711900
+]);
+// 354
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 104,
+    'harga_detilsp2d' => 1199
+]);
+// 355
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 104,
+    'harga_detilsp2d' => 5790390
+]);
+// 356
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 104,
+    'harga_detilsp2d' => 1790144
+]);
+// 357
+detilsp2d::create([
+    'detil_id' => 122,
+    'sp2d_id' => 104,
+    'harga_detilsp2d' => 900000
+]);
+// 358
+detilsp2d::create([
+    'detil_id' => 125,
+    'sp2d_id' => 104,
+    'harga_detilsp2d' => 5710000
+]);
+// 359
+detilsp2d::create([
+    'detil_id' => 127,
+    'sp2d_id' => 104,
+    'harga_detilsp2d' => 12575
+]);
+// 360
+detilsp2d::create([
+    'detil_id' => 130,
+    'sp2d_id' => 104,
+    'harga_detilsp2d' => 4996980
+]);
+// 361
+detilsp2d::create([
+    'detil_id' => 132,
+    'sp2d_id' => 104,
+    'harga_detilsp2d' => 730000
+]);
+// 362
+detilsp2d::create([
+    'detil_id' => 7,
+    'sp2d_id' => 171,
+    'harga_detilsp2d' => 1400000
+]);
+// 363
+detilsp2d::create([
+    'detil_id' => 64,
+    'sp2d_id' => 170,
+    'harga_detilsp2d' => 1600000
+]);
+// 364
+detilsp2d::create([
+    'detil_id' => 63,
+    'sp2d_id' => 170,
+    'harga_detilsp2d' => 1500000
+]);
+// 365
+detilsp2d::create([
+    'detil_id' => 68,
+    'sp2d_id' => 170,
+    'harga_detilsp2d' => 6500000
+]);
+// 366
+detilsp2d::create([
+    'detil_id' => 69,
+    'sp2d_id' => 170,
+    'harga_detilsp2d' => 1500000
+]);
+// 367
+detilsp2d::create([
+    'detil_id' => 70,
+    'sp2d_id' => 170,
+    'harga_detilsp2d' => 3400000
+]);
+// 368
+detilsp2d::create([
+    'detil_id' => 71,
+    'sp2d_id' => 170,
+    'harga_detilsp2d' => 3500000
+]);
+// 369
+detilsp2d::create([
+    'detil_id' => 72,
+    'sp2d_id' => 170,
+    'harga_detilsp2d' => 5200000
+]);
+// 370
+detilsp2d::create([
+    'detil_id' => 81,
+    'sp2d_id' => 170,
+    'harga_detilsp2d' => 1900000
+]);
+// 371
+detilsp2d::create([
+    'detil_id' => 9,
+    'sp2d_id' => 169,
+    'harga_detilsp2d' => 1050000
+]);
+// 372
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 169,
+    'harga_detilsp2d' => 2000000
+]);
+// 373
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 168,
+    'harga_detilsp2d' => 740000
+]);
+// 374
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 168,
+    'harga_detilsp2d' => 2960000
+]);
+// 375
+detilsp2d::create([
+    'detil_id' => 224,
+    'sp2d_id' => 167,
+    'harga_detilsp2d' => 1847000
+]);
+// 376
+detilsp2d::create([
+    'detil_id' => 216,
+    'sp2d_id' => 167,
+    'harga_detilsp2d' => 85000
+]);
+// 377
+detilsp2d::create([
+    'detil_id' => 232,
+    'sp2d_id' => 167,
+    'harga_detilsp2d' => 586500
+]);
+// 378
+detilsp2d::create([
+    'detil_id' => 227,
+    'sp2d_id' => 167,
+    'harga_detilsp2d' => 150000
+]);
+// 379
+detilsp2d::create([
+    'detil_id' => 106,
+    'sp2d_id' => 167,
+    'harga_detilsp2d' => 500000
+]);
+// 380
+detilsp2d::create([
+    'detil_id' => 107,
+    'sp2d_id' => 167,
+    'harga_detilsp2d' => 1450000
+]);
+// 381
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 166,
+    'harga_detilsp2d' => 1480000
+]);
+// 382
+detilsp2d::create([
+    'detil_id' => 35,
+    'sp2d_id' => 165,
+    'harga_detilsp2d' => 2220000
+]);
+// 383
+detilsp2d::create([
+    'detil_id' => 214,
+    'sp2d_id' => 164,
+    'harga_detilsp2d' => 1850000
+]);
+// 384
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 163,
+    'harga_detilsp2d' => 1480000
+]);
+// 385
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 162,
+    'harga_detilsp2d' => 750000
+]);
+// 386
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 161,
+    'harga_detilsp2d' => 750000
+]);
+// 387
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 160,
+    'harga_detilsp2d' => 1000000
+]);
+// 388
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 159,
+    'harga_detilsp2d' => 1110000
+]);
+// 389
+detilsp2d::create([
+    'detil_id' => 193,
+    'sp2d_id' => 158,
+    'harga_detilsp2d' => 1290000
+]);
+// 390
+detilsp2d::create([
+    'detil_id' => 195,
+    'sp2d_id' => 158,
+    'harga_detilsp2d' => 300000
+]);
+// 391
+detilsp2d::create([
+    'detil_id' => 196,
+    'sp2d_id' => 158,
+    'harga_detilsp2d' => 250000
+]);
+// 392
+detilsp2d::create([
+    'detil_id' => 197,
+    'sp2d_id' => 158,
+    'harga_detilsp2d' => 260000
+]);
+// 393
+detilsp2d::create([
+    'detil_id' => 199,
+    'sp2d_id' => 158,
+    'harga_detilsp2d' => 600000
+]);
+// 394
+detilsp2d::create([
+    'detil_id' => 186,
+    'sp2d_id' => 158,
+    'harga_detilsp2d' => 2590000
+]);
+// 395
+detilsp2d::create([
+    'detil_id' => 187,
+    'sp2d_id' => 158,
+    'harga_detilsp2d' => 990000
+]);
+// 396
+detilsp2d::create([
+    'detil_id' => 188,
+    'sp2d_id' => 158,
+    'harga_detilsp2d' => 344000
+]);
+// 397
+detilsp2d::create([
+    'detil_id' => 189,
+    'sp2d_id' => 158,
+    'harga_detilsp2d' => 3200000
+]);
+// 398
+detilsp2d::create([
+    'detil_id' => 191,
+    'sp2d_id' => 158,
+    'harga_detilsp2d' => 890000
+]);
+// 399
+detilsp2d::create([
+    'detil_id' => 192,
+    'sp2d_id' => 158,
+    'harga_detilsp2d' => 570000
+]);
+// 400
+detilsp2d::create([
+    'detil_id' => 201,
+    'sp2d_id' => 158,
+    'harga_detilsp2d' => 680000
+]);
+// 401
+detilsp2d::create([
+    'detil_id' => 141,
+    'sp2d_id' => 157,
+    'harga_detilsp2d' => 101759088
+]);
+// 402
+detilsp2d::create([
+    'detil_id' => 189,
+    'sp2d_id' => 156,
+    'harga_detilsp2d' => 640000
+]);
+// 403
+detilsp2d::create([
+    'detil_id' => 137,
+    'sp2d_id' => 155,
+    'harga_detilsp2d' => 7406000
+]);
+// 404
+detilsp2d::create([
+    'detil_id' => 136,
+    'sp2d_id' => 154,
+    'harga_detilsp2d' => 8595000
+]);
+// 405
+detilsp2d::create([
+    'detil_id' => 137,
+    'sp2d_id' => 153,
+    'harga_detilsp2d' => 9435000
+]);
+// 406
+detilsp2d::create([
+    'detil_id' => 139,
+    'sp2d_id' => 152,
+    'harga_detilsp2d' => 10971000
+]);
+// 407
+detilsp2d::create([
+    'detil_id' => 131,
+    'sp2d_id' => 151,
+    'harga_detilsp2d' => 9686000
+]);
+// 408
+detilsp2d::create([
+    'detil_id' => 166,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 4949000
+]);
+// 409
+detilsp2d::create([
+    'detil_id' => 167,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 3981300
+]);
+// 410
+detilsp2d::create([
+    'detil_id' => 174,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 96000
+]);
+// 411
+detilsp2d::create([
+    'detil_id' => 176,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 1723000
+]);
+// 412
+detilsp2d::create([
+    'detil_id' => 177,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 3649500
+]);
+// 413
+detilsp2d::create([
+    'detil_id' => 142,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 8484300
+]);
+// 414
+detilsp2d::create([
+    'detil_id' => 143,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 537000
+]);
+// 415
+detilsp2d::create([
+    'detil_id' => 144,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 5820000
+]);
+// 416
+detilsp2d::create([
+    'detil_id' => 162,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 4330000
+]);
+// 417
+detilsp2d::create([
+    'detil_id' => 146,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 3989900
+]);
+// 418
+detilsp2d::create([
+    'detil_id' => 148,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 6305300
+]);
+// 419
+detilsp2d::create([
+    'detil_id' => 157,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 1935000
+]);
+// 420
+detilsp2d::create([
+    'detil_id' => 159,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 2390000
+]);
+// 421
+detilsp2d::create([
+    'detil_id' => 161,
+    'sp2d_id' => 150,
+    'harga_detilsp2d' => 6743300
+]);
+// 422
+detilsp2d::create([
+    'detil_id' => 67,
+    'sp2d_id' => 149,
+    'harga_detilsp2d' => 83900000
+]);
+// 423
+detilsp2d::create([
+    'detil_id' => 168,
+    'sp2d_id' => 148,
+    'harga_detilsp2d' => 10800000
+]);
+// 424
+detilsp2d::create([
+    'detil_id' => 169,
+    'sp2d_id' => 148,
+    'harga_detilsp2d' => 3300000
+]);
+// 425
+detilsp2d::create([
+    'detil_id' => 170,
+    'sp2d_id' => 148,
+    'harga_detilsp2d' => 9600000
+]);
+// 426
+detilsp2d::create([
+    'detil_id' => 171,
+    'sp2d_id' => 148,
+    'harga_detilsp2d' => 5800000
+]);
+// 427
+detilsp2d::create([
+    'detil_id' => 173,
+    'sp2d_id' => 148,
+    'harga_detilsp2d' => 3600000
+]);
+// 428
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 133,
+    'harga_detilsp2d' => 74805800
+]);
+// 429
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 133,
+    'harga_detilsp2d' => 1197
+]);
+// 430
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 133,
+    'harga_detilsp2d' => 5799780
+]);
+// 431
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 133,
+    'harga_detilsp2d' => 1792022
+]);
+// 432
+detilsp2d::create([
+    'detil_id' => 122,
+    'sp2d_id' => 133,
+    'harga_detilsp2d' => 1260000
+]);
+// 433
+detilsp2d::create([
+    'detil_id' => 125,
+    'sp2d_id' => 133,
+    'harga_detilsp2d' => 5170000
+]);
+// 434
+detilsp2d::create([
+    'detil_id' => 127,
+    'sp2d_id' => 133,
+    'harga_detilsp2d' => 12575
+]);
+// 435
+detilsp2d::create([
+    'detil_id' => 130,
+    'sp2d_id' => 133,
+    'harga_detilsp2d' => 4996980
+]);
+// 436
+detilsp2d::create([
+    'detil_id' => 132,
+    'sp2d_id' => 133,
+    'harga_detilsp2d' => 730000
+]);
+// 437
+detilsp2d::create([
+    'detil_id' => 33,
+    'sp2d_id' => 190,
+    'harga_detilsp2d' => 740000
+]);
+// 438
+detilsp2d::create([
+    'detil_id' => 46,
+    'sp2d_id' => 189,
+    'harga_detilsp2d' => 2000000
+]);
+// 439
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 188,
+    'harga_detilsp2d' => 2220000
+]);
+// 440
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 187,
+    'harga_detilsp2d' => 1000000
+]);
+// 441
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 186,
+    'harga_detilsp2d' => 750000
+]);
+// 442
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 185,
+    'harga_detilsp2d' => 1110000
+]);
+// 443
+detilsp2d::create([
+    'detil_id' => 141,
+    'sp2d_id' => 184,
+    'harga_detilsp2d' => 102569533
+]);
+// 444
+detilsp2d::create([
+    'detil_id' => 131,
+    'sp2d_id' => 183,
+    'harga_detilsp2d' => 14421000
+]);
+// 445
+detilsp2d::create([
+    'detil_id' => 74,
+    'sp2d_id' => 182,
+    'harga_detilsp2d' => 346000
+]);
+// 446
+detilsp2d::create([
+    'detil_id' => 88,
+    'sp2d_id' => 182,
+    'harga_detilsp2d' => 1080000
+]);
+// 447
+detilsp2d::create([
+    'detil_id' => 89,
+    'sp2d_id' => 182,
+    'harga_detilsp2d' => 2032000
+]);
+// 448
+detilsp2d::create([
+    'detil_id' => 90,
+    'sp2d_id' => 182,
+    'harga_detilsp2d' => 660800
+]);
+// 449
+detilsp2d::create([
+    'detil_id' => 16,
+    'sp2d_id' => 181,
+    'harga_detilsp2d' => 1000000
+]);
+// 450
+detilsp2d::create([
+    'detil_id' => 9,
+    'sp2d_id' => 181,
+    'harga_detilsp2d' => 350000
+]);
+// 451
+detilsp2d::create([
+    'detil_id' => 7,
+    'sp2d_id' => 181,
+    'harga_detilsp2d' => 1050000
+]);
+// 452
+detilsp2d::create([
+    'detil_id' => 48,
+    'sp2d_id' => 180,
+    'harga_detilsp2d' => 1480000
+]);
+// 453
+detilsp2d::create([
+    'detil_id' => 47,
+    'sp2d_id' => 180,
+    'harga_detilsp2d' => 4440000
+]);
+// 454
+detilsp2d::create([
+    'detil_id' => 35,
+    'sp2d_id' => 180,
+    'harga_detilsp2d' => 1260000
+]);
+// 455
+detilsp2d::create([
+    'detil_id' => 33,
+    'sp2d_id' => 180,
+    'harga_detilsp2d' => 7432000
+]);
+// 456
+detilsp2d::create([
+    'detil_id' => 31,
+    'sp2d_id' => 180,
+    'harga_detilsp2d' => 740000
+]);
+// 457
+detilsp2d::create([
+    'detil_id' => 106,
+    'sp2d_id' => 179,
+    'harga_detilsp2d' => 400000
+]);
+// 458
+detilsp2d::create([
+    'detil_id' => 107,
+    'sp2d_id' => 179,
+    'harga_detilsp2d' => 1685000
+]);
+// 459
+detilsp2d::create([
+    'detil_id' => 211,
+    'sp2d_id' => 179,
+    'harga_detilsp2d' => 298000
+]);
+// 460
+detilsp2d::create([
+    'detil_id' => 231,
+    'sp2d_id' => 179,
+    'harga_detilsp2d' => 40000
+]);
+// 461
+detilsp2d::create([
+    'detil_id' => 217,
+    'sp2d_id' => 179,
+    'harga_detilsp2d' => 650000
+]);
+// 462
+detilsp2d::create([
+    'detil_id' => 229,
+    'sp2d_id' => 179,
+    'harga_detilsp2d' => 766500
+]);
+// 463
+detilsp2d::create([
+    'detil_id' => 226,
+    'sp2d_id' => 179,
+    'harga_detilsp2d' => 1631000
+]);
+// 464
+detilsp2d::create([
+    'detil_id' => 189,
+    'sp2d_id' => 178,
+    'harga_detilsp2d' => 640000
+]);
+// 465
+detilsp2d::create([
+    'detil_id' => 193,
+    'sp2d_id' => 177,
+    'harga_detilsp2d' => 1290000
+]);
+// 466
+detilsp2d::create([
+    'detil_id' => 195,
+    'sp2d_id' => 177,
+    'harga_detilsp2d' => 300000
+]);
+// 467
+detilsp2d::create([
+    'detil_id' => 196,
+    'sp2d_id' => 177,
+    'harga_detilsp2d' => 250000
+]);
+// 468
+detilsp2d::create([
+    'detil_id' => 197,
+    'sp2d_id' => 177,
+    'harga_detilsp2d' => 260000
+]);
+// 469
+detilsp2d::create([
+    'detil_id' => 199,
+    'sp2d_id' => 177,
+    'harga_detilsp2d' => 600000
+]);
+// 470
+detilsp2d::create([
+    'detil_id' => 186,
+    'sp2d_id' => 177,
+    'harga_detilsp2d' => 2590000
+]);
+// 471
+detilsp2d::create([
+    'detil_id' => 187,
+    'sp2d_id' => 177,
+    'harga_detilsp2d' => 990000
+]);
+// 472
+detilsp2d::create([
+    'detil_id' => 188,
+    'sp2d_id' => 177,
+    'harga_detilsp2d' => 344000
+]);
+// 473
+detilsp2d::create([
+    'detil_id' => 189,
+    'sp2d_id' => 177,
+    'harga_detilsp2d' => 3200000
+]);
+// 474
+detilsp2d::create([
+    'detil_id' => 191,
+    'sp2d_id' => 177,
+    'harga_detilsp2d' => 890000
+]);
+// 475
+detilsp2d::create([
+    'detil_id' => 192,
+    'sp2d_id' => 177,
+    'harga_detilsp2d' => 570000
+]);
+// 476
+detilsp2d::create([
+    'detil_id' => 201,
+    'sp2d_id' => 177,
+    'harga_detilsp2d' => 680000
+]);
+// 477
+detilsp2d::create([
+    'detil_id' => 166,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 2794000
+]);
+// 478
+detilsp2d::create([
+    'detil_id' => 167,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 2260000
+]);
+// 479
+detilsp2d::create([
+    'detil_id' => 165,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 9815100
+]);
+// 480
+detilsp2d::create([
+    'detil_id' => 174,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 57600
+]);
+// 481
+detilsp2d::create([
+    'detil_id' => 176,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 1275000
+]);
+// 482
+detilsp2d::create([
+    'detil_id' => 175,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 1800000
+]);
+// 483
+detilsp2d::create([
+    'detil_id' => 145,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 273600
+]);
+// 484
+detilsp2d::create([
+    'detil_id' => 103,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 35000
+]);
+// 485
+detilsp2d::create([
+    'detil_id' => 177,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 4544600
+]);
+// 486
+detilsp2d::create([
+    'detil_id' => 142,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 7966700
+]);
+// 487
+detilsp2d::create([
+    'detil_id' => 143,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 513400
+]);
+// 488
+detilsp2d::create([
+    'detil_id' => 144,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 3420000
+]);
+// 489
+detilsp2d::create([
+    'detil_id' => 162,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 1509000
+]);
+// 490
+detilsp2d::create([
+    'detil_id' => 163,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 10855800
+]);
+// 491
+detilsp2d::create([
+    'detil_id' => 148,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 7286100
+]);
+// 492
+detilsp2d::create([
+    'detil_id' => 146,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 3088800
+]);
+// 493
+detilsp2d::create([
+    'detil_id' => 161,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 1200000
+]);
+// 494
+detilsp2d::create([
+    'detil_id' => 159,
+    'sp2d_id' => 176,
+    'harga_detilsp2d' => 335000
+]);
+// 495
+detilsp2d::create([
+    'detil_id' => 141,
+    'sp2d_id' => 175,
+    'harga_detilsp2d' => 50762494
+]);
+// 496
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 174,
+    'harga_detilsp2d' => 74805800
+]);
+// 497
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 174,
+    'harga_detilsp2d' => 1418
+]);
+// 498
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 174,
+    'harga_detilsp2d' => 5799780
+]);
+// 499
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 174,
+    'harga_detilsp2d' => 1792022
+]);
+// 500
+detilsp2d::create([
+    'detil_id' => 122,
+    'sp2d_id' => 174,
+    'harga_detilsp2d' => 1260000
+]);
+// 501
+detilsp2d::create([
+    'detil_id' => 125,
+    'sp2d_id' => 174,
+    'harga_detilsp2d' => 5170000
+]);
+// 502
+detilsp2d::create([
+    'detil_id' => 127,
+    'sp2d_id' => 174,
+    'harga_detilsp2d' => 343200
+]);
+// 503
+detilsp2d::create([
+    'detil_id' => 130,
+    'sp2d_id' => 174,
+    'harga_detilsp2d' => 4996980
+]);
+// 504
+detilsp2d::create([
+    'detil_id' => 132,
+    'sp2d_id' => 174,
+    'harga_detilsp2d' => 730000
+]);
+// 505
+detilsp2d::create([
+    'detil_id' => 169,
+    'sp2d_id' => 173,
+    'harga_detilsp2d' => 3300000
+]);
+// 506
+detilsp2d::create([
+    'detil_id' => 170,
+    'sp2d_id' => 173,
+    'harga_detilsp2d' => 9600000
+]);
+// 507
+detilsp2d::create([
+    'detil_id' => 168,
+    'sp2d_id' => 173,
+    'harga_detilsp2d' => 10800000
+]);
+// 508
+detilsp2d::create([
+    'detil_id' => 171,
+    'sp2d_id' => 173,
+    'harga_detilsp2d' => 2900000
+]);
+// 509
+detilsp2d::create([
+    'detil_id' => 172,
+    'sp2d_id' => 173,
+    'harga_detilsp2d' => 2900000
+]);
+// 510
+detilsp2d::create([
+    'detil_id' => 173,
+    'sp2d_id' => 173,
+    'harga_detilsp2d' => 3600000
+]);
+// 511
+detilsp2d::create([
+    'detil_id' => 110,
+    'sp2d_id' => 172,
+    'harga_detilsp2d' => 74805800
+]);
+// 512
+detilsp2d::create([
+    'detil_id' => 113,
+    'sp2d_id' => 172,
+    'harga_detilsp2d' => 1152
+]);
+// 513
+detilsp2d::create([
+    'detil_id' => 116,
+    'sp2d_id' => 172,
+    'harga_detilsp2d' => 5799780
+]);
+// 514
+detilsp2d::create([
+    'detil_id' => 119,
+    'sp2d_id' => 172,
+    'harga_detilsp2d' => 1792022
+]);
+// 515
+detilsp2d::create([
+    'detil_id' => 122,
+    'sp2d_id' => 172,
+    'harga_detilsp2d' => 1260000
+]);
+// 516
+detilsp2d::create([
+    'detil_id' => 125,
+    'sp2d_id' => 172,
+    'harga_detilsp2d' => 5170000
+]);
+// 517
+detilsp2d::create([
+    'detil_id' => 127,
+    'sp2d_id' => 172,
+    'harga_detilsp2d' => 12575
+]);
+// 518
+detilsp2d::create([
+    'detil_id' => 130,
+    'sp2d_id' => 172,
+    'harga_detilsp2d' => 4996980
+]);
+// 519
+detilsp2d::create([
+    'detil_id' => 132,
+    'sp2d_id' => 172,
+    'harga_detilsp2d' => 730000
+]);
+
     }
 }

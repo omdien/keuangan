@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('akun');
             $table->string('sd_akun');
             $table->string('nm_akun');
+            $table->bigInteger('jumlah_akun')->default(0);
             $table->foreignId('subkom_id');
             $table->timestamps();
         });

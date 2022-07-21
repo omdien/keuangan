@@ -13,13 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('subkoms', function (Blueprint $table) {
+        Schema::create('detilsp2ds', function (Blueprint $table) {
             $table->id();
-            $table->string('kd_subkom');
-            $table->string('kd_short');
-            $table->string('nm_subkom');
-            $table->bigInteger('jumlah_subkom')->default(0);
-            $table->foreignId('komponen_id');
+            $table->foreignId('detil_id');
+            $table->foreignId('sp2d_id');
+            $table->integer('harga_detilsp2d');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('subkoms');
+        Schema::dropIfExists('detilsp2ds');
     }
 };

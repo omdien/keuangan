@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('kd_kro');
             $table->string('kd_short');
             $table->string('nm_kro');
+            $table->bigInteger('jumlah_kro')->default(0);
             $table->foreignId('kegiatan_id');
             $table->timestamps();
         });

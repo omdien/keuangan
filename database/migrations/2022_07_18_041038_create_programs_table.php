@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('kd_program');
             $table->string('kd_short');
             $table->string('nm_program');
+            $table->bigInteger('jumlah_program')->default(0);
             $table->foreignId('satker_id');
             $table->timestamps();
         });

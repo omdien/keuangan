@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('kd_satker');
             $table->string('nm_satker');
+            $table->bigInteger('jumlah_satker')->default(0);
             $table->timestamps();
         });
     }

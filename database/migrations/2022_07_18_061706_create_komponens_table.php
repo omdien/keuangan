@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('kd_komponen');
             $table->string('kd_short');
             $table->string('nm_komponen');
+            $table->bigInteger('jumlah_komponen')->default(0);
             $table->foreignId('ro_id');
             $table->timestamps();
         });
